@@ -2,29 +2,43 @@ version: "2.0"
 
 stories:
 
-- story: happy path
+- story: chaoHoi
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
-
-- story: sad path 1
+  - intent: chaoHoi
+  - action: utter_chaoHoi
+- story: tamBiet
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
-
-- story: sad path 2
+  - intent: tamBiet
+  - action: utter_tamBiet
+- story: khenBot
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  - intent: khen
+  - action: utter_khen
+- story: cheBot
+  steps:
+  - intent: che
+  - action: utter_che
+- story: canGiupDo
+  steps:
+  - intent: hoi_giupDo
+  - action: utter_Ask_giupDO
+- story: hoi_chucNangCuaBOT
+  steps:
+  - intent: hoi_chucNang
+  - action: utter_Ask_chucNang
+- story: hoi_coPhaiLaBotKhong
+  steps:
+  - intent: hoi_botAI
+  - action: utter_Ask_botAI
+- story: hoi_thongTinGiangVien_chungCuaKhoa
+  steps:
+  - intent: hoi_thongTinGV_chung
+  - action: action_ask_doiNguGV_Khoa
+- story: hoi_thongTinGiangVien_chungCuaNganh
+  steps:
+  - intent: hoi_thongTinGV_nganh
+  - action: action_ask_doiNguGV_nganh
+- story: hoi_thongTinGiangVien_chiTiet
+  steps:
+  - intent: hoi_thongTinGV_chiTiet
+  - action: action_ask_doiNguGV_chiTiet

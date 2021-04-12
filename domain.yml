@@ -1,34 +1,58 @@
 version: "2.0"
 
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-
+  - chaoHoi
+  - tamBiet
+  - khen
+  - che
+  - hoi_giupDo
+  - hoi_chucNang
+  - hoi_botAI
+  - hoi_thongTinGV_chiTiet
+  - hoi_thongTinGV_chung
+  - hoi_thongTinGV_nganh
+actions:
+  - utter_Ask_botAI
+  - utter_Ask_chucNang
+  - utter_Ask_giupDO
+  - utter_chaoHoi
+  - utter_che
+  - utter_fallback
+  - utter_khen
+  - utter_tamBiet
+  - action_ask_doiNguGV_chiTiet
+  - action_ask_doiNguGV_Khoa
+  - action_ask_doiNguGV_nganh
 responses:
-  utter_greet:
+  utter_chaoHoi:
   - text: "Hey! How are you?"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
-
-  utter_goodbye:
+  - text: "Xin chào"
+  - text: "Chào mừng tới Fanpage hỗ trợ của khoa CNTT - IUH"
+  - text: "Chào ! bạn cần hỗ trợ gì không?"
+  utter_tamBiet:
   - text: "Bye"
-
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
-
+  - text: "Tạm biệt"
+  - text: "Cảm ơn đã ghé thăm, hẹn gặp lại"
+  - text: "OK bye"
+  utter_khen:
+  - text: "Bạn quá khen, đó là công việc của tôi. Bạn còn cần giúp gì nữa không?"
+  - text: "Ko có gì, giúp bạn là nhiệm vụ của tôi"
+  - text: "Đó là niềm vui của tôi"
+  utter_che:
+  - text: "Sorry, đã không giúp được"
+  - text: "Xin lỗi không giúp được"
+  utter_Ask_giupDO:
+  - text: "Vâng, tôi có thể giúp gì bạn?"
+  - text: "Đương nhiên, bạn cần gì?"
+  - text: "Tôi luôn sẵn lòng giúp đỡ, bạn cần hỗ trợ về vấn đề gì"
+  utter_Ask_chucNang:
+  - text: "Tôi có thể tử vấn các vấn đề liên quan đến khoa CNTT"
+  - text: "Tôi có thể nói chuyện với bạn và hỗ trợ các tư vấn các thông tin về khoa CNTT-IUH"
+  utter_Ask_botAI:
+  - text: "Vâng tôi là bot được con người tạo ra"
+  - text: "Tôi là 1 chương trình máy tính, có khả năng trò chuyện và hỗ trợ con người"
+  utter_fallback:
+  - text: "Xin lỗi, tôi không hiểu bạn nói về vấn đề gì"
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

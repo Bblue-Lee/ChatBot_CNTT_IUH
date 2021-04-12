@@ -1,93 +1,109 @@
 version: "2.0"
 
 nlu:
-- intent: greet
+- intent: chaoHoi
   examples: |
     - hey
     - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
-
-- intent: goodbye
+    - chào
+    - chào ad
+    - chào admin
+    - xin chào
+    - hi there
+    - xin chao
+    - xin chào bạn
+- intent: tamBiet
   examples: |
-    - good afternoon
-    - cu
-    - good by
-    - cee you later
-    - good night
     - bye
+    - bye bye
     - goodbye
     - have a nice day
-    - see you around
-    - bye bye
-    - see you later
-
-- intent: affirm
+    - tạm biệt
+    - nói chuyện sau
+- intent: khen
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
-
-- intent: deny
+    - wow
+    - you are good
+    - thanks for help
+    - cảm ơn
+    - cảm ơn đã giúp
+    - cảm ơn nhiều
+    - cảm ơn rất nhiều
+    - em cảm ơn ạ
+    - cảm ơn ạ
+- intent: che
   examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
-
-- intent: mood_great
+    - bạn tệ quá
+    - tệ quá
+    - ngu ngốc
+    - không hữu ích
+    - không làm được gì hết
+    - bạn không giúp được tôi à?
+    - quá tệ
+    - không ra gì
+    - thông tin không hữu ích
+- intent: hoi_giupDo
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
-
-- intent: mood_unhappy
+    - bạn có thể giúp tôi không?
+    - giúp tôi?
+    - giúp tý?
+    - giúp
+    - tư vấn
+    - tư vấn cho tôi?
+- intent: hoi_chucNang
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
-
-- intent: bot_challenge
+    - bạn có thể làm gì?
+    - có thể làm gì?
+    - bạn có thể làm gì cho tôi?
+    - làm gì cho tôi?
+    - cho tôi?
+    - bạn hỗ trợ về vấn đề gì
+    - hỗ trợ gì cho tôi?
+    - chức năng gì
+    - bạn có chức năng gì?
+    - giới thiệu chức năng của bạn
+    - chức năng của bạn?
+    - bạn biết những gì?
+    - biết làm gì?
+- intent: hoi_botAI
   examples: |
-    - are you a bot?
-    - are u stupid ?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - bạn là bot à?
+    - bạn có phải con người không?
+    - bot à?
+    - giới thiệu bản thân bạn?
+    - bạn là ai?
+    - bản thân bạn
+    - AI
+- intent: hoi_thongTinGV_chung
+  examples: |
+    - Đội ngũ giảng viên của khoa?
+    - giảng viên?
+    - giảng viên của khoa CNTT?
+    - giảng viên CNTT?
+    - cơ cấu giảng viên khoa CNTT?
+- intent: hoi_thongTinGV_chiTiet
+  examples: |
+    - xem thông tin giảng viên?
+    - xem thông tin chi tiết của giảng viên?
+    - xin thông tin giảng viên?
+    - tôi muốn xem thông tin của một giảng viên?
+    - cho tôi xem thông tin cụ thể của giảng viên?
+    - cụ thể giảng viên?
+    - chi tiết giảng viên?
+    - giảng viên chi tiết
+- intent: hoi_thongTinGV_nganh
+  examples: |
+    - giảng viên ngành?
+    - ngành giảng viên?
+    - ngành có bao nhiêu giảng viên?
+    - đội ngũ giảng viên ngành
+    - giảng viên ngành KHMT?
+    - giảng viên ngành KHDL?
+    - giảng viên ngành HTMT?
+    - giảng viên ngành KTPM
+    - giảng viên ngành CMTT?
+    
+
+
+
+
