@@ -8,9 +8,27 @@ intents:
   - hoi_giupDo
   - hoi_chucNang
   - hoi_botAI
-  - hoi_thongTinGV_chiTiet
-  - hoi_thongTinGV_chung
-  - hoi_thongTinGV_nganh
+
+  - hoi_ThongTinKhoaChung
+  - hoi_CoCauToChuc
+  - hoi_DoiNguGV_KTPM
+  - hoi_DoiNguGV_KHMT
+  - hoi_DoiNguGV_CNTT
+  - hoi_DoiNguGV_HTMT
+  - hoi_DoiNguGV_KHDL
+  - hoi_DaoTaoSauDH
+  - hoi_daoTaoDH
+  - hoi_daoTaoCaoDang
+  - hoi_thongTinTuyenSinh
+  - hoi_congTrinhNghienCuu
+  - hoi_tinTucSuKien
+  - hoi_doanThanhNien
+  - hoi_cauLacBoLapTrinh
+  - hoi_cauLacBoAnToanThongTin
+  - hoi_thongBaoSinhVien
+  - hoi_huongDan_bieuMau
+  - hoi_dangKyDoAn
+  - hoi_thucTap_viecLam
 actions:
   - utter_Ask_botAI
   - utter_Ask_chucNang
@@ -20,12 +38,29 @@ actions:
   - utter_fallback
   - utter_khen
   - utter_tamBiet
-  - action_ask_doiNguGV_chiTiet
-  - action_ask_doiNguGV_Khoa
-  - action_ask_doiNguGV_nganh
+  - utter_hoi_dangKyDoAn
+  - utter_hoi_daoTaoCaoDang
+  - utter_hoi_doanThanhNien
+  - utter_hoi_ThongTinKhoaChung
+
+  - action_hoi_CoCauToChuc
+  - action_hoi_DoiNguGV_KTPM
+  - action_hoi_DoiNguGV_KHMT
+  - action_hoi_DoiNguGV_CNTT
+  - action_hoi_DoiNguGV_HTMT
+  - action_hoi_DoiNguGV_KHDL
+  - action_hoi_DaoTaoSauDH
+  - action_hoi_daoTaoDH
+  - action_hoi_thongTinTuyenSinh
+  - action_hoi_congTrinhNghienCuu
+  - action_hoi_tinTucSuKien
+  - action_hoi_cauLacBoLapTrinh
+  - action_hoi_cauLacBoAnToanThongTin
+  - action_hoi_thongBaoSinhVien
+  - action_hoi_huongDan_bieuMau
+  - action_hoi_thucTap_viecLam
 responses:
   utter_chaoHoi:
-  - text: "Hey! How are you?"
   - text: "Xin chào"
   - text: "Chào mừng tới Fanpage hỗ trợ của khoa CNTT - IUH"
   - text: "Chào ! bạn cần hỗ trợ gì không?"
@@ -39,8 +74,9 @@ responses:
   - text: "Ko có gì, giúp bạn là nhiệm vụ của tôi"
   - text: "Đó là niềm vui của tôi"
   utter_che:
-  - text: "Sorry, đã không giúp được"
-  - text: "Xin lỗi không giúp được"
+  - text: "Sorry, đã không giúp được bạn"
+  - text: "Xin lỗi không giúp được, bạn có thể truy cập http://fit.iuh.edu.vn để xem thông tin cuh thể "
+  - text: ""
   utter_Ask_giupDO:
   - text: "Vâng, tôi có thể giúp gì bạn?"
   - text: "Đương nhiên, bạn cần gì?"
@@ -51,6 +87,16 @@ responses:
   utter_Ask_botAI:
   - text: "Vâng tôi là bot được con người tạo ra"
   - text: "Tôi là 1 chương trình máy tính, có khả năng trò chuyện và hỗ trợ con người"
+  utter_hoi_thongTinKhoaChung:
+  - text: "Khoa Công nghệ thông tin (CNTT) được hình thành từ năm 1996, Trải qua chặng đường dài không ngừng nỗ lực hoàn thiện và phát triển, 
+  Khoa CNTT đang từng bước khẳng định uy tín của mình với phương châm “Đào tạo sinh viên vững lý thuyết, giỏi thực hành và làm chủ công nghệ mới”. 
+  Xem chi tiết tại: http://fit.iuh.edu.vn/category.html@163@Gioi-thieu-ve-khoa"
+  utter_hoi_dangKyDoAn:
+  - text: "Bạn có thể truy cập link để đăng ký: https://phuoccse.com/fit/dangkydoan/dang-ky-do-an.php"
+  utter_hoi_daoTaoCaoDang:
+  - text: "Hiện tại khoa tôi chưa cso thông tin về đào tạo Cao Đằng. Bạn có thể liên hệ Giáo vụ khoa để hỏi chi tiết hơn"
+  utter_hoi_doanThanhNien: 
+  - text: "Bạn có thể truy cập link sau đề xem thông tin chi tiết: http://doankhoacntt.com/"
   utter_fallback:
   - text: "Xin lỗi, tôi không hiểu bạn nói về vấn đề gì"
 session_config:

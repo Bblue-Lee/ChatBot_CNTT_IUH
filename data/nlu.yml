@@ -74,36 +74,103 @@ nlu:
     - bạn là ai?
     - bản thân bạn
     - AI
-- intent: hoi_thongTinGV_chung
+- intent: hoi_ThongTinKhoaChung
   examples: |
-    - Đội ngũ giảng viên của khoa?
-    - giảng viên?
-    - giảng viên của khoa CNTT?
-    - giảng viên CNTT?
-    - cơ cấu giảng viên khoa CNTT?
-- intent: hoi_thongTinGV_chiTiet
+    - Khoa công nghẹ thông tin
+    - giới thiệu tổng quan về khoa Cntt
+    - giới thiệu về khoa cntt
+    - giới thiệu về khoa
+    - khoa CNTT được hình thành năm nào
+    - Phương châm của khoa cntt
+    - tầm nhìn của khoa
+    - tầm nhìn của khoa cntt
+    - sứ mệnh khoa cntt
+    - sứ mệnh của khoa là gì
+    - sư mệnh
+    - chức năng của khoa
+    - nhiệm vụ của khoa
+    - chức năng- nhiệm vụ của khoa
+    - chức năng, nhiêm vụ của khoa cntt
+    - đội ngũ giảng viên của khoa
+    - khoa có bao nhiêu viên chức
+    - có bao nhiêu giảng viên,
+    - khoa có bao nhiêu tiến sĩ
+    - khoa có bao nhiêu thạc sĩ
+    - khoa có bao nhiêu giáo sư
+    - khoa đào tạo như thế nào
+    - đào tạo của khoa
+    - nghành đào tạo của khoa
+    - thông tin liên hệ của đơn vị
+    - thông tin liên hệ về khoa
+    - liên hệ khoa
+    - website của khoa
+    - trưởng khoa CNTT
+    - ai là trưởng khoa cntt
+    - hiện ai là trưởng khoa cntt
+    - năm 2020 ai là trưởng khoa
+- intent: hoi_CoCauToChuc
   examples: |
-    - xem thông tin giảng viên?
-    - xem thông tin chi tiết của giảng viên?
-    - xin thông tin giảng viên?
-    - tôi muốn xem thông tin của một giảng viên?
-    - cho tôi xem thông tin cụ thể của giảng viên?
-    - cụ thể giảng viên?
-    - chi tiết giảng viên?
-    - giảng viên chi tiết
-- intent: hoi_thongTinGV_nganh
+    - cơ cấu tổ chức khoa CNTT
+    - cơ cấu tổ chức khoa
+    - cơ cấu của khoa
+    - cơ cấu tổ chức
+    - ban chủ nhiệm khoa
+    - giảng viên nào nằm trong ban chủ nhiêm
+    - ban chủ nhiệm
+    - trưởng khoa
+    - ai là trưởng khoa
+    - trưởng khoa cnnt
+    - giảng viên nào là trưởng khoa
+    - phó trưởng khoa
+    - ai là phó trưởng khoa
+    - phó trưởng khoa cnnt
+    - giảng viên nào là phó trưởng khoa
+    - ban giáo vụ
+    - ban giáo vụ khoa
+    - ai là ban giáo vụ khoa
+    - giáo vụ khoa
+    - giáo vụ
+- intent: hoi_DoiNguGV_KTPM
   examples: |
-    - giảng viên ngành?
-    - ngành giảng viên?
-    - ngành có bao nhiêu giảng viên?
-    - đội ngũ giảng viên ngành
-    - giảng viên ngành KHMT?
-    - giảng viên ngành KHDL?
-    - giảng viên ngành HTMT?
-    - giảng viên ngành KTPM
-    - giảng viên ngành CMTT?
-    
-
-
+- intent: hoi_DoiNguGV_KHMT
+  examples: |
+- intent: hoi_DoiNguGV_CNTT
+  examples: |
+- intent: hoi_DoiNguGV_HTMT
+  examples: |
+- intent: hoi_DoiNguGV_KHDL
+  examples: |
+- intent: hoi_DaoTaoSauDH
+  examples: |
+- intent: hoi_daoTaoDH 
+  examples: |
+- intent: hoi_daoTaoCaoDang 
+  examples: |
+- intent: hoi_thongTinTuyenSinh 
+  examples: |
+- intent: hoi_congTrinhNghienCuu 
+  examples: |
+- intent: hoi_tinTucSuKien 
+  examples: |
+- intent: hoi_doanThanhNien  
+  examples: |
+- intent: hoi_cauLacBoLapTrinh 
+  examples: |
+- intent: hoi_cauLacBoAnToanThongTin  
+  examples: |
+- intent: hoi_thongBaoSinhVien  
+  examples: |
+- intent: hoi_huongDan_bieuMau
+  examples: |
+- intent: hoi_dangKyDoAn 
+  examples: |
+- intent: hoi_thucTap_viecLam
+  examples: |
+- intent: hoi_
+  examples: |
+- intent: hoi_
+  examples: |
+- intent: hoi_
+  examples: |
 
 
