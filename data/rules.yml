@@ -1,4 +1,27 @@
 version: "2.0"
 
 rules:
-
+- rule: xin chào
+  steps:
+  - intent: chaoHoi
+  - action: utter_chaoHoi
+- rule: show gv ktpm
+  steps:
+  - intent: hoi_DoiNguGV_KTPM
+  - action: action_hoi_DoiNguGV_KTPM
+- rule: only show gv_khmt when action ask gv_khmt
+  steps:
+  - intent: hoi_DoiNguGV_KHMT
+  - action: action_hoi_DoiNguGV_KHMT
+- rule: only show gv_KHDL
+  steps:
+  - intent: hoi_DoiNguGV_KHDL
+  - action: action_hoi_DoiNguGV_KHDL
+- rule: only show gv_CNTT
+  steps:
+  - intent: hoi_DoiNguGV_CNTT
+  - action: action_hoi_DoiNguGV_CNTT
+- rule: only show gv_httt
+  steps:
+  - intent: hoi_DoiNguGV_HTMT
+  - action: action_hoi_DoiNguGV_HTMT

@@ -16,7 +16,7 @@ stories:
   - action: utter_khen
 - story: cheBot
   steps:
-  - intent: che
+  - intent: cheBai
   - action: utter_che
 - story: canGiupDo
   steps:
@@ -30,87 +30,55 @@ stories:
   steps:
   - intent: hoi_botAI
   - action: utter_Ask_botAI
-- story: hỏi thông tin chung của khoa
+- story: hỏi thông tin cơ bản về khoa
   steps:
+  - intent: chaoHoi
+  - action: utter_chaoHoi
   - intent: hoi_ThongTinKhoaChung
-  - action: utter_hoi_ThongTinKhoaChung
-- story: hỏi thông tin về cơ cấu tổ chức của khoa
-  steps:
-  - intent: hoi_CoCauToChuc
-  - action: action_hoi_CoCauToChuc
-- story: hỏi thông tin giảng viên bôm môn KTPM
-  steps:
-  - intent: hoi_DoiNguGV_KTPM
-  - action: action_hoi_DoiNguGV_KTPM
-- story: hỏi thông tin giảng viên bôm môn KHMT
-  steps:
-  - intent: hoi_DoiNguGV_KHMT
-  - action: action_hoi_DoiNguGV_KHMT
-- story: hỏi thông tin giảng viên bôm môn HTTT
-  steps:
-  - intent: hoi_DoiNguGV_HTMT
-  - action: action_hoi_DoiNguGV_HTMT
-- story: hỏi thông tin giảng viên bôm môn CNTT
-  steps:
-  - intent: hoi_DoiNguGV_CNTT
-  - action: action_hoi_DoiNguGV_CNTT
-- story: hỏi thông tin giảng viên bôm môn KHDL
-  steps:
-  - intent: hoi_DoiNguGV_KHDL
-  - action: action_hoi_DoiNguGV_KHDL
-- story: hỏi thông tin về đào tạo sau đại học
-  steps:
-  - intent: hoi_DaoTaoSauDH
-  - action: action_hoi_DaoTaoSauDH
-- story: hỏi thông tin đào tạo đại học
-  steps:
-  - intent: hoi_daoTaoDH
-  - action: action_hoi_daoTaoDH
-- story: hỏi thông tin đào tạo cao đẳng
-  steps:
-  - intent: hoi_daoTaoCaoDang
-  - action: utter_hoi_daoTaoCaoDang
-- story: hỏi thông tin tuyển sinh
-  steps:
-  - intent: hoi_thongTinTuyenSinh
-  - action: action_hoi_thongTinTuyenSinh
-- story: hỏi thông tin về công trinh nghiên cứu
-  steps:
-  - intent: hoi_congTrinhNghienCuu
-  - action: action_hoi_congTrinhNghienCuu
-- story: hỏi tin tức - sự kiện cảu khoa
-  steps:
-  - intent: hoi_tinTucSuKien
-  - action: action_hoi_tinTucSuKien
-- story: hỏi thông tin về đoàn thanh niên
-  steps:
-  - intent: hoi_doanThanhNien
-  - action: utter_hoi_doanThanhNien
-- story: hỏi thông tin về câu lạc bộ lập trình
-  steps:
-  - intent: hoi_cauLacBoLapTrinh
-  - action: action_hoi_cauLacBoLapTrinh
-- story: hỏi thông tin về câu lạc bộ an toàn thông tin
-  steps:
-  - intent: action_hoi_cauLacBoAnToanThongTin
-  - action: action_hoi_cauLacBoAnToanThongTin
-- story: hỏi thông báo sinh viên
-  steps:
-  - intent: hoi_thongBaoSinhVien
-  - action: action_hoi_thongBaoSinhVien
-- story: hỏi thông tin về biểu mẫu và hướng dẫn
-  steps:
-  - intent: hoi_huongDan_bieuMau
-  - action: action_hoi_huongDan_bieuMau
-- story: hỏi thông tin về đăng ký đồ án
+  - action: utter_hoi_thongTinKhoaChung
+- story: hỏi đăng ký đồ án
   steps:
   - intent: hoi_dangKyDoAn
   - action: utter_hoi_dangKyDoAn
-- story: hỏi thông tin việc làm -thực tập
+- story: hỏi doàn thanh niên khoa
   steps:
-  - intent: hoi_thucTap_viecLam
-  - action: action_hoi_thucTap_viecLam
-
-
-
-
+  - intent: hoi_doanThanhNien
+  - action: utter_hoi_doanThanhNien
+- story: đào tạo cao đẳng
+  steps:
+  - intent: hoi_daoTaoCaoDang
+  - action: utter_hoi_daoTaoCaoDang
+- story: đào tạo cao đẳng
+  steps:
+  - intent: hoi_DaoTaoSauDH
+  - action: utter_hoi_daoTaoSauDaiHoc
+- story: hỏi cơ cấu tổ chức của khoa
+  steps:
+  - intent: hoi_CoCauToChuc
+  - action: action_hoi_CoCauToChuc
+- story: giveTime
+  steps:
+  - intent: chaoHoi
+  - action: utter_chaoHoi 
+  - intent: give_time
+  - action: action_show_time
+- story: show gv ktpm
+  steps:
+  - intent: hoi_DoiNguGV_KTPM
+  - action: action_hoi_DoiNguGV_KTPM
+- story: show giảng viên KHMT
+  steps:
+  - intent: hoi_DoiNguGV_KHMT
+  - action: action_hoi_DoiNguGV_KHMT
+- story: show giảng viên KHDL
+  steps:
+  - intent: hoi_DoiNguGV_KHDL
+  - action: action_hoi_DoiNguGV_KHDL
+- story: show giảng viên CNTT
+  steps:
+  - intent: hoi_DoiNguGV_CNTT
+  - action: action_hoi_DoiNguGV_CNTT
+- story: show giảng viên HTMT
+  steps:
+  - intent: hoi_DoiNguGV_HTMT
+  - action: action_hoi_DoiNguGV_HTMT

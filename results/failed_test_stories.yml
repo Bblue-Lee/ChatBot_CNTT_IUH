@@ -1,0 +1,51 @@
+version: "2.0"
+stories:
+- story: happy path 1 (C:\Users\Hung\AppData\Local\Temp\tmpa6y791xq\97574a26b5d94fa099c33a9a910f26e5_test_stories.yml)
+  steps:
+  - intent: greet  # predicted: chaoHoi: hello there!
+  - action: utter_greet  # predicted: action_hoi_doiNguGV_KTPM
+  - intent: mood_great  # predicted: nlu_fallback: amazing
+  - action: utter_happy  # predicted: action_hoi_doiNguGV_KTPM
+- story: happy path 2 (C:\Users\Hung\AppData\Local\Temp\tmpa6y791xq\97574a26b5d94fa099c33a9a910f26e5_test_stories.yml)
+  steps:
+  - intent: greet  # predicted: chaoHoi: hello there!
+  - action: utter_greet  # predicted: action_hoi_doiNguGV_KTPM
+  - intent: mood_great  # predicted: nlu_fallback: amazing
+  - action: utter_happy  # predicted: action_hoi_doiNguGV_KTPM
+  - intent: goodbye  # predicted: tamBiet: bye-bye!
+  - action: utter_goodbye  # predicted: action_hoi_doiNguGV_KTPM
+- story: sad path 1 (C:\Users\Hung\AppData\Local\Temp\tmpa6y791xq\97574a26b5d94fa099c33a9a910f26e5_test_stories.yml)
+  steps:
+  - intent: greet  # predicted: chaoHoi: hello
+  - action: utter_greet  # predicted: action_hoi_doiNguGV_KTPM
+  - intent: mood_unhappy  # predicted: nlu_fallback: not good
+  - action: utter_cheer_up  # predicted: action_hoi_doiNguGV_KTPM
+  - action: utter_did_that_help  # predicted: action_listen
+  - intent: affirm  # predicted: tamBiet: yes
+  - action: utter_happy  # predicted: action_hoi_doiNguGV_KTPM
+- story: sad path 2 (C:\Users\Hung\AppData\Local\Temp\tmpa6y791xq\97574a26b5d94fa099c33a9a910f26e5_test_stories.yml)
+  steps:
+  - intent: greet  # predicted: chaoHoi: hello
+  - action: utter_greet  # predicted: action_hoi_doiNguGV_KTPM
+  - intent: mood_unhappy  # predicted: nlu_fallback: not good
+  - action: utter_cheer_up  # predicted: action_hoi_doiNguGV_KTPM
+  - action: utter_did_that_help  # predicted: action_listen
+  - intent: deny  # predicted: tamBiet: not really
+  - action: utter_goodbye  # predicted: action_hoi_doiNguGV_KTPM
+- story: sad path 3 (C:\Users\Hung\AppData\Local\Temp\tmpa6y791xq\97574a26b5d94fa099c33a9a910f26e5_test_stories.yml)
+  steps:
+  - intent: greet  # predicted: chaoHoi: hi
+  - action: utter_greet  # predicted: action_hoi_doiNguGV_KTPM
+  - intent: mood_unhappy  # predicted: chaoHoi: very terrible
+  - action: utter_cheer_up  # predicted: action_hoi_doiNguGV_KTPM
+  - action: utter_did_that_help  # predicted: action_listen
+  - intent: deny  # predicted: nlu_fallback: no
+  - action: utter_goodbye  # predicted: action_hoi_doiNguGV_KTPM
+- story: say goodbye (C:\Users\Hung\AppData\Local\Temp\tmpa6y791xq\97574a26b5d94fa099c33a9a910f26e5_test_stories.yml)
+  steps:
+  - intent: goodbye  # predicted: tamBiet: bye-bye!
+  - action: utter_goodbye  # predicted: action_hoi_doiNguGV_KTPM
+- story: bot challenge (C:\Users\Hung\AppData\Local\Temp\tmpa6y791xq\97574a26b5d94fa099c33a9a910f26e5_test_stories.yml)
+  steps:
+  - intent: bot_challenge  # predicted: khen: are you a bot?
+  - action: utter_iamabot  # predicted: action_hoi_doiNguGV_KTPM

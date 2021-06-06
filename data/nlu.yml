@@ -31,7 +31,7 @@ nlu:
     - cảm ơn rất nhiều
     - em cảm ơn ạ
     - cảm ơn ạ
-- intent: che
+- intent: cheBai
   examples: |
     - bạn tệ quá
     - tệ quá
@@ -76,7 +76,7 @@ nlu:
     - AI
 - intent: hoi_ThongTinKhoaChung
   examples: |
-    - Khoa công nghẹ thông tin
+    - Khoa công nghệ thông tin
     - giới thiệu tổng quan về khoa Cntt
     - giới thiệu về khoa cntt
     - giới thiệu về khoa
@@ -89,7 +89,7 @@ nlu:
     - sư mệnh
     - chức năng của khoa
     - nhiệm vụ của khoa
-    - chức năng- nhiệm vụ của khoa
+    - chức năng - nhiệm vụ của khoa
     - chức năng, nhiêm vụ của khoa cntt
     - đội ngũ giảng viên của khoa
     - khoa có bao nhiêu viên chức
@@ -108,6 +108,32 @@ nlu:
     - ai là trưởng khoa cntt
     - hiện ai là trưởng khoa cntt
     - năm 2020 ai là trưởng khoa
+- intent: give_time
+  examples: |
+    - show me time now
+    - give time
+- intent: hoi_dangKyDoAn 
+  examples: |
+    - tôi muốn đăng ký đồ án
+    - đăng ký đồ án
+    - đăng ký khóa luận
+    - đồ án tốt nghiệp
+    - làm sao để đăng ký đồ án
+    - phải làm gì để đăng ký đồ án
+- intent: hoi_daoTaoCaoDang 
+  examples: |
+    - khoa mình có đào tạo hệ [cao đẳng](capBac) không?
+    - tôi muốn đăng ký hệ [cao đẳng](capBac)
+    - giới thiệu về hệ [cao đẳng](capBac)
+    - hệ [cao đẳng](capBac)
+    - quá trình đào tạo của hệ [cao đẳng](capBac)
+    - mức học phí của hệ [cao đẳng](capBac)
+- intent: hoi_doanThanhNien  
+  examples: |
+    - quá trình hoạt động của đoàn thanh niên
+    - đoàn thanh niên của khoa
+    - hoạt động của đoàn thanh niên
+    - chi tiết về đoàn thanh niên
 - intent: hoi_CoCauToChuc
   examples: |
     - cơ cấu tổ chức khoa CNTT
@@ -132,45 +158,91 @@ nlu:
     - giáo vụ
 - intent: hoi_DoiNguGV_KTPM
   examples: |
+    - Đội ngũ giảng viên của ngành [kỹ thuật phần mềm](boMon)
+    - Giảng viên [kỹ thuật phần mềm](boMon)
+    - cho tôi biết đội ngũ giảng viên của ngành [KTPM](boMon)
+    - giảng viên bộ môn [kỹ thuật phần mềm](boMon)
+    - giảng viên bộ môn [KTPM](boMon)
+    - giảng viên [KTPM](boMon)
+    - GV [KTPM](boMon)
+    - giảng viên [KTPM](boMon) khoa CNTT
+    - bạn có thể cho tôi thông tin  về đội ngũ giảng viên [KTPM](boMon)
+    - ai là trưởng bộ môn [KTPM](boMon)
+    - hiện tại ai là trưởng bộ môn [KTPM](boMon)
+    - phó bôn môn [KTPM](boMon)
 - intent: hoi_DoiNguGV_KHMT
   examples: |
+    - Đội ngũ giảng viên của ngành [khoa học máy tính](boMon)
+    - Giảng viên [khoa hoch máy tính](boMon)
+    - cho tôi biết đội ngũ giảng viên của ngành [KHMT](boMon)
+    - giảng viên bộ môn [khoa học máy tính](boMon)
+    - giảng viên bộ môn [KHMT](boMon)
+    - giảng viên [KHMT](boMon)
+    - GV [KHMT](boMon)
+    - giảng viên [KHMT](boMon) khoa CNTT
+    - bạn có thể cho tôi thông tin  về đội ngũ giảng viên [KHMT](boMon)
+    - ai là trưởng bộ môn [KHMT](boMon)
+    - hiện tại ai là trưởng bộ môn [KHMT](boMon)
+    - phó bôn môn [KHMT](boMon)
 - intent: hoi_DoiNguGV_CNTT
   examples: |
+    - Đội ngũ giảng viên của ngành [công nghệ thông tin](boMon)
+    - Giảng viên [công nghệ thông tin](boMon)
+    - cho tôi biết đội ngũ giảng viên của ngành [CNTT](boMon)
+    - giảng viên bộ môn [công nghệ thông tin](boMon)
+    - giảng viên bộ môn [CNTT](boMon)
+    - giảng viên [CNTT](boMon)
+    - GV [CNTT](boMon)
+    - giảng viên [CNTT](boMon) khoa CNTT
+    - bạn có thể cho tôi thông tin  về đội ngũ giảng viên [CNTT](boMon)
+    - ai là trưởng bộ môn [CNTT](boMon)
+    - hiện tại ai là trưởng bộ môn [CNTT](boMon)
+    - phó bôn môn [CNTT](boMon)
 - intent: hoi_DoiNguGV_HTMT
   examples: |
+    - Đội ngũ giảng viên của ngành [hệ thống máy tính](boMon)
+    - Giảng viên [hệ thống máy tính](boMon)
+    - cho tôi biết đội ngũ giảng viên của ngành [HTMT](boMon)
+    - giảng viên bộ môn [hệ thống máy tính](boMon)
+    - giảng viên bộ môn [HTMT](boMon)
+    - giảng viên [HTMT](boMon)
+    - GV [HTMT](boMon)
+    - giảng viên [HTMT](boMon) khoa CNTT
+    - bạn có thể cho tôi thông tin  về đội ngũ giảng viên [HTMT](boMon)
+    - ai là trưởng bộ môn [HTMT](boMon)
+    - hiện tại ai là trưởng bộ môn [HTMT](boMon)
+    - phó bôn môn [HTMT](boMon)
 - intent: hoi_DoiNguGV_KHDL
   examples: |
+    - Đội ngũ giảng viên của ngành [khoa học dữ liệu](boMon)
+    - Giảng viên [khoa học dữ liệu](boMon)
+    - cho tôi biết đội ngũ giảng viên của ngành [KHDL](boMon)
+    - giảng viên bộ môn [khoa học dữ liệu](boMon)
+    - giảng viên bộ môn [KHDL](boMon)
+    - giảng viên [KHDL](boMon)
+    - GV [KHDL](boMon)
+    - giảng viên [KHDL](boMon) khoa CNTT
+    - bạn có thể cho tôi thông tin  về đội ngũ giảng viên [KHDL](boMon)
+    - ai là trưởng bộ môn [KHDL](boMon)
+    - hiện tại ai là trưởng bộ môn [KHDL](boMon)
+    - phó bôn môn [KHDL](boMon)
 - intent: hoi_DaoTaoSauDH
   examples: |
-- intent: hoi_daoTaoDH 
+    - Đào tạo [sau đại học](capBac)
+    - cho tôi thông tin về [sau đại học](capBac)
+    - thông tin về đào tạo [sau đại học](capBac)
+    - [sau đại học](capBac)
+    - chương trình đào tạo [sau đại học](capBac)
+    - [sau đại học](capBac) khoa đào tạo thế nào?
+- intent: hoi_DaoTaoDH
   examples: |
-- intent: hoi_daoTaoCaoDang 
-  examples: |
-- intent: hoi_thongTinTuyenSinh 
-  examples: |
-- intent: hoi_congTrinhNghienCuu 
-  examples: |
-- intent: hoi_tinTucSuKien 
-  examples: |
-- intent: hoi_doanThanhNien  
-  examples: |
-- intent: hoi_cauLacBoLapTrinh 
-  examples: |
-- intent: hoi_cauLacBoAnToanThongTin  
-  examples: |
-- intent: hoi_thongBaoSinhVien  
-  examples: |
-- intent: hoi_huongDan_bieuMau
-  examples: |
-- intent: hoi_dangKyDoAn 
-  examples: |
-- intent: hoi_thucTap_viecLam
-  examples: |
-- intent: hoi_
-  examples: |
-- intent: hoi_
-  examples: |
-- intent: hoi_
-  examples: |
+    - Đào tạo [đại học](capBac)
+    - cho tôi thông tin về [đại học](capBac)
+    - thông tin về đào tạo [đại học](capBac)
+    - [sau đại học](capBac)
+    - chương trình đào tạo [đại học](capBac)
+    - [đại học](capBac) khoa đào tạo thế nào?
 
 
+
+    

@@ -1,0 +1,59 @@
+﻿web-scraper-order,web-scraper-start-url,link-name,link-name-href,image-gv-src,name-gv,chuc-vu,mail-gv,huong-nghien-cuu-link,huong-nghien-cuu-link-href,content
+"1617637637-2","http://fit.iuh.edu.vn/giangvien.html@185@Doi-ngu-giang-vien","ThS. Đặng Thị Thu Hà","http://fit.iuh.edu.vn/giangvien@dangthithuha","upload/giangvien/no-image.png","ThS. Đặng Thị Thu Hà","Giảng viên","dtthuha79@gmail.com","Hướng nghiên cứu","http://fit.iuh.edu.vn/giangvien@dangthithuha#tab2","Phát triển Web ứng dụng API
+
+Lập trình hướng đối tượng - OOP
+
+Quản lý dự án trong ngành Kỹ thuật phần mềm"
+"1617637662-8","http://fit.iuh.edu.vn/giangvien.html@185@Doi-ngu-giang-vien","ThS. Nguyễn Thị Hoàng Khánh","http://fit.iuh.edu.vn/giangvien@nguyenthihoangkhanh","/upload/files/Image1.jpg","ThS. Nguyễn Thị Hoàng Khánh","Giảng viên","ngthihoangkhanh@gmail.com","Hướng nghiên cứu","http://fit.iuh.edu.vn/giangvien@nguyenthihoangkhanh#tab2","Phát triển phần mềm theo hướng dữ liệu lớn (Big data)"
+"1617637633-1","http://fit.iuh.edu.vn/giangvien.html@185@Doi-ngu-giang-vien","ThS. Đặng Văn Thuận","http://fit.iuh.edu.vn/giangvien@DangVanThuan","upload/giangvien/no-image.png","ThS. Đặng Văn Thuận","Giảng viên","dangvanthuan26@gmail.com","Hướng nghiên cứu","http://fit.iuh.edu.vn/giangvien@DangVanThuan#tab2","Nội dung đang cập nhật..."
+"1617637666-9","http://fit.iuh.edu.vn/giangvien.html@185@Doi-ngu-giang-vien","ThS. Nguyễn Năm","http://fit.iuh.edu.vn/giangvien@nguyennam","upload/giangvien/no-image.png","ThS. Nguyễn Năm","Giảng viên","ngnamfit@gmail.com","Hướng nghiên cứu","http://fit.iuh.edu.vn/giangvien@nguyennam#tab2","- Các hệ thống nghiệp vụ, chuyển yêu cầu nghiệp vụ thành yêu cầu hệ thống, phát triển các tiện ích cho các nghiệp vụ đơn giản và chuyên biệt.
+
+- Nhân tố con người trong phát triển và vận hành hệ thống thông tin
+
+- Quản lý chất lượng và Kiểm thử phần mềm"
+"1617637641-3","http://fit.iuh.edu.vn/giangvien.html@185@Doi-ngu-giang-vien","ThS. Trần Thị Anh Thi","http://fit.iuh.edu.vn/giangvien@tranthianhthi","/upload/images/Untitled.png","ThS. Trần Thị Anh Thi","Giảng viên","tranthianhthi@iuh.edu.vn","Hướng nghiên cứu","http://fit.iuh.edu.vn/giangvien@tranthianhthi#tab2","Phát triển phần mềm hướng mô hình (MDA,MDD)
+
+Phát sinh mã giao diện người dùng theo hướng mô hình (Code Generation)"
+"1617637675-11","http://fit.iuh.edu.vn/giangvien.html@185@Doi-ngu-giang-vien","ThS. Tôn Long Phước (NCS)","http://fit.iuh.edu.vn/giangvien@tonlongphuoc","/upload/images/Anh%20GV/TonLongPhuoc.JPG","ThS. Tôn Long Phước (NCS)","Giảng viên","tonlongphuoc@iuh.edu.vn","Hướng nghiên cứu","http://fit.iuh.edu.vn/giangvien@tonlongphuoc#tab2","Research interests:
+
+- Domain Specific Languages
+
+- Code Generation
+
+- Software Abstraction
+
+- IoTs
+
+Publications:
+
+1. Tôn, L-P. and Truong, T-M. ""Linking Rules and Conceptual Model in a Domain Specicfic Language"". In Proceedings of 9th International Conference on Advanced Computing and Applications (ACOMP), pages 35-42, IEEE Computer Society, 2015.
+
+2.  Tôn, L-P. and Nguyen, M-H. ""Model checking early requirements specifications in Alloy"", In Journal of Science and Technology, Vietnam Academy of Science and Technology, vol. 54 (3A), Special issue of Intelligent System and its Applications, pp. 140-151, (selected papers from Proceedings of International Symposium Intelligent Systems and Applications 2016 (ISA2016))
+
+3. Truong, T-M., Lê, L-S., Tôn, L-P. “Re-engineering Enterprises Using Data Warehouse as a Driver and Requirements as an Enabler”. In Proceedings of 21st IEEE International Conference on Enterprise Distributed Object Computing, pp 67-72, IEEE Computer Society, October 2017
+
+4. Tôn, L-P., Pham, H-A. and Dao, B. ""Software Abstraction for Casual Games Using Temporal Model: an Alloy-based Approach"". In Proceedings of 11th International Conference on Advanced Computing and Applications, pp 3-9, IEEE Computer Society, 2017.
+
+5. Tôn, L-P., Lê, L-S., Pham, H-A. “Towards a Domain Specific Framework for Wearable Applications in Internet of Things”. In Proceedings of 4th International Conference on Future Data and Security Engineering, pp 309-324, Springer, November 2017.
+
+6.  Tôn, L-P., Lê, L-S., Pham, H-A. and Dao, B. ""Monitoring IoT Objects in Wearable Applications: An Alloy-Based Approach"". In Proceedings of 12th International Conference on Advanced Computing and Applications, pp 35-41, IEEE Computer Society, 2018
+
+7. Tôn, L-P., Lê, L-S. “Enacting a Rule-Based Alert Business Process in Smart Healthcare Using IoT Wearables” In Proceedings of 21st IEEE International Conference on Enterprise Distributed Object Computing, pp 104-107, IEEE Computer Society, October 2019
+
+8. Truong, T-M., Tôn, L-P. ""Augmenting a Process Model with State Machine and Business Artifacts"" In Proceedings of 13th International Conference on Advanced Computing and Applications, pp 7-15, IEEE Computer Society, 2019"
+"1617637649-5","http://fit.iuh.edu.vn/giangvien.html@185@Doi-ngu-giang-vien","ThS. Nguyễn Văn Thắng","http://fit.iuh.edu.vn/giangvien@nguyenvanthang","/upload/files/2016/MyPicDHCBVC2016.jpg","ThS. Nguyễn Văn Thắng","Giảng viên","thangvnguyen2001@gmail.com","Hướng nghiên cứu","http://fit.iuh.edu.vn/giangvien@nguyenvanthang#tab2","Lĩnh vực lập trình
+
+1) Lập trình Windows.
+
+2) Lập trình Java.
+
+3) Android."
+"1617637654-6","http://fit.iuh.edu.vn/giangvien.html@185@Doi-ngu-giang-vien","TS. Nguyễn Trọng Tiến","http://fit.iuh.edu.vn/giangvien@nguyentrongtuyen","upload/giangvien/no-image.png","TS. Nguyễn Trọng Tiến","Giảng viên","nguyenusb2005@gmail.com","Hướng nghiên cứu","http://fit.iuh.edu.vn/giangvien@nguyentrongtuyen#tab2","Nội dung đang cập nhật..."
+"1617637670-10","http://fit.iuh.edu.vn/giangvien.html@185@Doi-ngu-giang-vien","ThS. Châu Thị Bảo Hà","http://fit.iuh.edu.vn/giangvien@chauthibaoha","upload/giangvien/no-image.png","ThS. Châu Thị Bảo Hà","Giảng viên","chauthibaoha@gmail.com","Hướng nghiên cứu","http://fit.iuh.edu.vn/giangvien@chauthibaoha#tab2","Software testing"
+"1617637658-7","http://fit.iuh.edu.vn/giangvien.html@185@Doi-ngu-giang-vien","ThS. Nguyễn Thị Hồng Lương","http://fit.iuh.edu.vn/giangvien@nguyenthihongluong","/upload/files/h.PNG","ThS. Nguyễn Thị Hồng Lương","Giảng viên","NGUYENLUONG1603@GMAIL.COM","Hướng nghiên cứu","http://fit.iuh.edu.vn/giangvien@nguyenthihongluong#tab2","Phát triển Web ứng dụng API"
+"1617637645-4","http://fit.iuh.edu.vn/giangvien.html@185@Doi-ngu-giang-vien","ThS. Phạm Thanh Hùng","http://fit.iuh.edu.vn/giangvien@phamthanhhung","upload/giangvien/no-image.png","ThS. Phạm Thanh Hùng","Giảng viên","pthung_2002@yahoo.com","Hướng nghiên cứu","http://fit.iuh.edu.vn/giangvien@phamthanhhung#tab2","Lập trình Java
+
+Phát triển ứng dụng"
+"1617637679-12","http://fit.iuh.edu.vn/giangvien.html@185@Doi-ngu-giang-vien","ThS. Phạm Quảng Tri","http://fit.iuh.edu.vn/giangvien@phamquangtri","upload/giangvien/no-image.png","ThS. Phạm Quảng Tri","Trưởng bộ môn","phamquangtri@gmail.com","Hướng nghiên cứu","http://fit.iuh.edu.vn/giangvien@phamquangtri#tab2","- Cá​c kỹ​ thuậ​t phá​t triể​n phầ​n mềm
+
+- Kiể​m thử​ phầ​n mềm"
