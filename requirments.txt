@@ -1,5 +1,5 @@
-//bạn chạy lệnh sau để cài thư viện cần thiết
-//pip install -r requirements.txt
+# bạn chạy lệnh sau để cài thư viện cần thiết
+# pip install -r requirements.txt
 
 colorama
 kafka-python
