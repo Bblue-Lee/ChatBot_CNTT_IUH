@@ -6,10 +6,12 @@ stories:
   steps:
   - intent: chaoHoi
   - action: utter_chaoHoi
+  - checkpoint: check_asked_chaoHoi
 - story: tamBiet
   steps:
   - intent: tamBiet
   - action: utter_tamBiet
+  - checkpoint: check_asked_tamBiet
 - story: khenBot
   steps:
   - intent: khen
@@ -30,12 +32,12 @@ stories:
   steps:
   - intent: hoi_botAI
   - action: utter_Ask_botAI
-- story: hỏi thông tin cơ bản về khoa
+- story: tiếp tục hội thoại
   steps:
-  - intent: chaoHoi
-  - action: utter_chaoHoi
-  - intent: hoi_ThongTinKhoaChung
-  - action: utter_hoi_thongTinKhoaChung
+  - intent: dongY
+  - action: utter_Ask_giupDO
+  - checkpoint: check_asked_dongY
+#
 - story: hỏi đăng ký đồ án
   steps:
   - intent: hoi_dangKyDoAn
@@ -48,7 +50,7 @@ stories:
   steps:
   - intent: hoi_daoTaoCaoDang
   - action: utter_hoi_daoTaoCaoDang
-- story: đào tạo cao đẳng
+- story: đào tạo sau dại học
   steps:
   - intent: hoi_DaoTaoSauDH
   - action: utter_hoi_daoTaoSauDaiHoc
@@ -56,12 +58,7 @@ stories:
   steps:
   - intent: hoi_CoCauToChuc
   - action: action_hoi_CoCauToChuc
-- story: giveTime
-  steps:
-  - intent: chaoHoi
-  - action: utter_chaoHoi 
-  - intent: give_time
-  - action: action_show_time
+#
 - story: show gv ktpm
   steps:
   - intent: hoi_DoiNguGV_KTPM
@@ -82,10 +79,7 @@ stories:
   steps:
   - intent: hoi_DoiNguGV_HTMT
   - action: action_hoi_DoiNguGV_HTMT
-- story: thông báo của khoa
-  steps:
-  - intent: hoi_thongBaoSinhVien
-  - action: action_hoi_thongBaoSinhVien
+#
 - story: tổng quát về khoa
   steps:
   - intent: hoi_thongTinKhoaChung_tongQuat
@@ -94,7 +88,7 @@ stories:
   steps:
   - intent: hoi_thongTinKhoaChung_suMenh
   - action: utter_hoi_thongTinKhoaChung_suMenh
-- story: đội ngũ cảu khoa
+- story: đội ngũ của khoa
   steps:
   - intent: hoi_thongTinKhoaChung_doiNgu
   - action: utter_hoi_thongTinKhoaChung_doiNgu
@@ -102,11 +96,24 @@ stories:
   steps:
   - intent: hoi_thongTinKhoaChung_daoTao
   - action: utter_hoi_thongTinKhoaChung_daoTao
-- story: tầm nhìn cảu khoa
+- story: tầm nhìn của khoa
   steps:
   - intent: hoi_thongTinKhoaChung_tamNhin
   - action: utter_hoi_thongTinKhoaChung_tamNhin
-- story: hoi về việc tuyển sinh cảu khoa
+- story: định hướng phát triển
+  steps:
+  - intent: hoi_thongTinKhoaChung_dinhHuongPhatTrien
+  - action: utter_hoi_thongTinKhoaChung_dinhHuong
+- story: liên hệ khoa
+  steps:
+  - intent: hoi_thongTinKhoaChung_lienHe
+  - action: utter_hoi_thongTinKhoaChung_lienHe
+- story: trưởng khoa
+  steps:
+  - intent: hoi_thongTinKhoaChung_truongKhoa
+  - action: utter_hoi_thongTinKhoaChung_truongKhoa
+#
+- story: hoi về việc tuyển sinh của khoa
   steps:
   - intent: hoi_thongTinTuyenSinh
   - action: action_hoi_thongBaoTuyenSinh
@@ -118,3 +125,41 @@ stories:
   steps:
   - intent: hoi_tinTucSuKien
   - action: action_hoi_tinTucSuKien
+- story: thông báo sinh viên
+  steps:
+  - intent: hoi_thongBaoSinhVien
+  - action: action_hoi_thongBaoSinhVien
+- story: hỏi về chương trình đào tạo đại học nghành KTPM
+  steps:
+  - intent: hoi_DaoTaoDH_KTPM
+  - action: utter_hoi_DaoTaoDH_KTPM
+- story: hỏi về chương trình đào tạo đại học nghành KTPM
+  steps:
+  - intent: hoi_DaoTaoDH_KHMT
+  - action: utter_hoi_DaoTaoDH_KHMT
+- story: hỏi về chương trình đào tạo đại học nghành KTPM
+  steps:
+  - intent: hoi_DaoTaoDH_CNTT
+  - action: utter_hoi_DaoTaoDH_CNTT
+- story: hỏi về chương trình đào tạo đại học nghành KTPM
+  steps:
+  - intent: hoi_DaoTaoDH_HTTT
+  - action: utter_hoi_DaoTaoDH_HTTT
+- story: hỏi về chương trình đào tạo đại học nghành KHDL
+  steps:
+  - checkpoint: check_asked_chaoHoi
+  - intent: hoi_DaoTaoDH_KHDL
+  - action: utter_hoi_DaoTaoDH_KHDL
+  - action: utter_ask_continue
+  - checkpoint: check_asked_dongY
+  - checkpoint: check_asked_tamBiet
+
+
+
+
+
+
+
+
+
+

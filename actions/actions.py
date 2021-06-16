@@ -55,7 +55,7 @@ class ActionGetInfo_DoiNguGV_KTPM(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        file=pandas.read_csv('E:\\DATN_2020\\Chatbot_v1\\actions\\KTPM_GV.csv')
+        file=pandas.read_csv('E:\\ChatBot-CNTT\\actions\\CNTT_GV.csv\\KTPM_GV.csv')
 
         dataRead=file[['name-gv', 'chuc-vu','mail-gv']]
         dispatcher.utter_message(text=f'{dataRead}')
@@ -68,7 +68,7 @@ class ActionGetInfo_DoiNguGV_KHMT(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        file=pandas.read_csv('E:\\DATN_2020\\Chatbot_v1\\actions\\KHMT_GV.csv')
+        file=pandas.read_csv('E:\\ChatBot-CNTT\\actions\\CNTT_GV.csv\\KHMT_GV.csv')
 
         dataRead=file[['name-gv', 'chuc-vu','mail-gv']]
         dispatcher.utter_message(text=f'{dataRead}')
@@ -81,7 +81,7 @@ class ActionGetInfo_DoiNguGV_KHDL(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        file=pandas.read_csv('E:\\DATN_2020\\Chatbot_v1\\actions\\KHDL_GV.csv')
+        file=pandas.read_csv('E:\\ChatBot-CNTT\\actions\\CNTT_GV.csv\\KHDL_GV.csv')
 
         dataRead=file[['name-gv', 'chuc-vu','mail-gv']]
         dispatcher.utter_message(text=f'{dataRead}')
@@ -94,7 +94,7 @@ class ActionGetInfo_DoiNguGV_CNTT(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        file=pandas.read_csv('E:\\DATN_2020\\Chatbot_v1\\actions\\CNTT_GV.csv')
+        file=pandas.read_csv('E:\\ChatBot-CNTT\\actions\\CNTT_GV.csv\\CNTT_GV.csv')
 
         dataRead=file[['name-gv', 'chuc-vu','mail-gv']]
         dispatcher.utter_message(text=f'{dataRead}')
@@ -107,7 +107,7 @@ class ActionGetInfo_DoiNguGV_HTTT(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        file=pandas.read_csv('E:\\DATN_2020\\Chatbot_v1\\actions\\HTTT_GV.csv')
+        file=pandas.read_csv('E:\\ChatBot-CNTT\\actions\\CNTT_GV.csv\\HTTT_GV.csv')
 
         dataRead=file[['name-gv', 'chuc-vu','mail-gv']]
         dispatcher.utter_message(text=f'{dataRead}')
