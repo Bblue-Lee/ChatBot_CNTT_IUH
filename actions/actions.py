@@ -57,7 +57,7 @@ class ActionGetInfo_DoiNguGV_KTPM(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         file=pandas.read_csv('E:\\DATN_2020\\Chatbot_v1\\actions\\KTPM_GV.csv')
 
-        dataRead=file[['link-name', 'name-gv', 'chuc-vu','mail-gv']]
+        dataRead=file[['name-gv', 'chuc-vu','mail-gv']]
         dispatcher.utter_message(text=f'{dataRead}')
         return []
 class ActionGetInfo_DoiNguGV_KHMT(Action):
@@ -70,7 +70,7 @@ class ActionGetInfo_DoiNguGV_KHMT(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         file=pandas.read_csv('E:\\DATN_2020\\Chatbot_v1\\actions\\KHMT_GV.csv')
 
-        dataRead=file[['link-name', 'name-gv', 'chuc-vu','mail-gv']]
+        dataRead=file[['name-gv', 'chuc-vu','mail-gv']]
         dispatcher.utter_message(text=f'{dataRead}')
         return []
 class ActionGetInfo_DoiNguGV_KHDL(Action):
@@ -83,7 +83,7 @@ class ActionGetInfo_DoiNguGV_KHDL(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         file=pandas.read_csv('E:\\DATN_2020\\Chatbot_v1\\actions\\KHDL_GV.csv')
 
-        dataRead=file[['link-name', 'name-gv', 'chuc-vu','mail-gv']]
+        dataRead=file[['name-gv', 'chuc-vu','mail-gv']]
         dispatcher.utter_message(text=f'{dataRead}')
         return []
 class ActionGetInfo_DoiNguGV_CNTT(Action):
@@ -96,7 +96,7 @@ class ActionGetInfo_DoiNguGV_CNTT(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         file=pandas.read_csv('E:\\DATN_2020\\Chatbot_v1\\actions\\CNTT_GV.csv')
 
-        dataRead=file[['link-name', 'name-gv', 'chuc-vu','mail-gv']]
+        dataRead=file[['name-gv', 'chuc-vu','mail-gv']]
         dispatcher.utter_message(text=f'{dataRead}')
         return []
 class ActionGetInfo_DoiNguGV_HTTT(Action):
@@ -109,11 +109,90 @@ class ActionGetInfo_DoiNguGV_HTTT(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         file=pandas.read_csv('E:\\DATN_2020\\Chatbot_v1\\actions\\HTTT_GV.csv')
 
-        dataRead=file[['link-name', 'name-gv', 'chuc-vu','mail-gv']]
+        dataRead=file[['name-gv', 'chuc-vu','mail-gv']]
         dispatcher.utter_message(text=f'{dataRead}')
         return []
+class ActionGetInfo_thongBaoSinhVien(Action):
 
+    def name(self) -> Text:
+        return "action_hoi_thongBaoSinhVien"
 
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        url =  'http://fit.iuh.edu.vn/news.html@155@Thong-bao-Sinh-vien'
+        page = urllib.request.urlopen(url)
+        soup = BeautifulSoup(page, 'html.parser')
 
+        left_content=soup.find(class_='col-md-9 page-left').find(class_='left-content')
+        content_list= left_content.find(class_='content-list').find_all(class_='content')
+        for x in content_list:
+	        thongBao=x.find(class_='content-info col-sm-9')
+	        title=thongBao.find('a').get('title')
+	        time=thongBao.find('span').text
+	        href=thongBao.find('a').get('href')    
+	        dispatcher.utter_message(text=f"{title} \n{time}\nhttp://fit.iuh.edu.vn/{href}")
+class ActionGetInfo_thucTapViecLam(Action):
 
+    def name(self) -> Text:
+        return "action_hoi_thucTapViecLam"
 
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        url =  'http://fit.iuh.edu.vn/news.html@104@Thuc-tap-Viec-lam'
+        page = urllib.request.urlopen(url)
+        soup = BeautifulSoup(page, 'html.parser')
+
+        left_content=soup.find(class_='col-md-9 page-left').find(class_='left-content')
+        content_list= left_content.find(class_='content-list').find_all(class_='content')
+        for x in content_list:
+	        thongBao=x.find(class_='content-info col-sm-9')
+	        title=thongBao.find('a').get('title')
+	        time=thongBao.find('span').text
+	        href=thongBao.find('a').get('href')    
+	        dispatcher.utter_message(text=f"{title} \t{time}\nhttp://fit.iuh.edu.vn/{href}")
+        return []
+class ActionGetInfo_thongBaoTuyenSinh(Action):
+
+    def name(self) -> Text:
+        return "action_hoi_thongBaoTuyenSinh"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        url =  'http://fit.iuh.edu.vn/news.html@157@Thong-tin-tuyen-sinh'
+        page = urllib.request.urlopen(url)
+        soup = BeautifulSoup(page, 'html.parser')
+
+        left_content=soup.find(class_='col-md-9 page-left').find(class_='left-content')
+        content_list= left_content.find(class_='content-list').find_all(class_='content')
+        for x in content_list:
+	        thongBao=x.find(class_='content-info col-sm-9')
+	        title=thongBao.find('a').get('title')
+	        time=thongBao.find('span').text
+	        href=thongBao.find('a').get('href')    
+	        dispatcher.utter_message(text=f"{title} \t{time}\nhttp://fit.iuh.edu.vn/{href}")
+        return []
+
+class ActionGetInfo_tinTucSuKien(Action):
+
+    def name(self) -> Text:
+        return "action_hoi_tinTucSuKien"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        url =  'http://fit.iuh.edu.vn/news.html@102@Tin-tuc-Su-kien'
+        page = urllib.request.urlopen(url)
+        soup = BeautifulSoup(page, 'html.parser')
+
+        left_content=soup.find(class_='col-md-9 page-left').find(class_='left-content')
+        content_list= left_content.find(class_='content-list').find_all(class_='content')
+        for x in content_list:
+	        thongBao=x.find(class_='content-info col-sm-9')
+	        title=thongBao.find('a').get('title')
+	        time=thongBao.find('span').text
+	        href=thongBao.find('a').get('href')    
+	        dispatcher.utter_message(text=f"{title} \t{time}\nhttp://fit.iuh.edu.vn/{href}")
+        return []

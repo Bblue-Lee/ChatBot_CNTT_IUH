@@ -1,6 +1,7 @@
 version: "2.0"
 
 nlu:
+# Bộ câu hỏi cơ bản
 - intent: chaoHoi
   examples: |
     - hey
@@ -74,6 +75,7 @@ nlu:
     - bạn là ai?
     - bản thân bạn
     - AI
+# Bộ câu hỏi về phần giới thiêu khoa
 - intent: hoi_ThongTinKhoaChung
   examples: |
     - Khoa công nghệ thông tin
@@ -108,54 +110,74 @@ nlu:
     - ai là trưởng khoa cntt
     - hiện ai là trưởng khoa cntt
     - năm 2020 ai là trưởng khoa
-- intent: give_time
+- intent: hoi_thongTinKhoaChung_tongQuat
   examples: |
-    - show me time now
-    - give time
-- intent: hoi_dangKyDoAn 
+    - bạn có thể cho tôi thông tin về khoa được không?
+    - thông tin tổng quát về khoa
+    - hãy giới thiệu tổng quát về khoa
+    - tôi muốn biết thông tin về khoa cntt của trường
+    - bây giờ bạn có thể cho tôi biết thông tin chung về khoa được không?
+    - bạn có thể giới thiệu về khoa
+    - bạn hãy nêu những thông tin cơ bản về khoa
+    - thông tin về khoa
+    - bạn có thể cho tôi biết được thông tin về khoa hay không?
+    - không biết khoa mình hình thành từ năm nào?
+    - bạn cho tôi biết khoa cntt của trường hình thành từ năm bao nhiêu không?
+    - bạn cho tôi biết khoa cntt của trường đại học công nghiêp hình thành từ năm bao nhiêu không?
+    - admin cho mình biết là khoa cntt có phương châm như thế nào?
+    - tôi muốn biết phương châm cảu khoa cntt
+    - phương châm khoa công nghệ thông tin
+    - khoa cntt hình thành khi nào
+    - khoa công nghệ thông tin thành lập vào thời gian nào?
+    - thời gian thành lập khoa công nghệ thông tin
+    - hãy cho tôi biết năm thành lập khoa công nghệ thông tin
+    - hãy cho tôi biết năm thành lập khoa
+    - tôi muốn biết năm thành lập của khoa cntt
+    - cho tôi hỏi năm thành lập của khoa
+    - bây giờ cho tôi biết phương châm của khoa cntt là gì?
+    - khoa cnntt hình thành từ khi nào và phương châm của khoa là gì?
+    - admin cho tôi biết là thời gian hình thành khoa công nghệ thông tin
+- intent: hoi_thongTinKhoaChung_tamNhin
   examples: |
-    - tôi muốn đăng ký đồ án
-    - đăng ký đồ án
-    - đăng ký khóa luận
-    - đồ án tốt nghiệp
-    - làm sao để đăng ký đồ án
-    - phải làm gì để đăng ký đồ án
-- intent: hoi_daoTaoCaoDang 
+    - bạn hãy nêu cho tôi tầm nhìn của khoa trong những năm tới
+    - cho tôi biết tầm nhìn của khoa
+    - tầm nhìn của khoa
+    - tầm nhìn
+- intent: hoi_thongTinKhoaChung_suMenh
   examples: |
-    - khoa mình có đào tạo hệ [cao đẳng](capBac) không?
-    - tôi muốn đăng ký hệ [cao đẳng](capBac)
-    - giới thiệu về hệ [cao đẳng](capBac)
-    - hệ [cao đẳng](capBac)
-    - quá trình đào tạo của hệ [cao đẳng](capBac)
-    - mức học phí của hệ [cao đẳng](capBac)
-- intent: hoi_doanThanhNien  
+    - hãy nêu sứ mệnh của khoa công nghệ thông tin
+    - bạn có thể nêu lên sứ mệnh của khoa
+    - sứ mệnh của khoa
+    - sứ mệnh
+    - sứ mênh của khoa
+- intent: hoi_thongTinKhoaChung_chucNangNhiemVu
   examples: |
-    - quá trình hoạt động của đoàn thanh niên
-    - đoàn thanh niên của khoa
-    - hoạt động của đoàn thanh niên
-    - chi tiết về đoàn thanh niên
-- intent: hoi_CoCauToChuc
+    - chức năng của khoa
+    - nhiệm vụ của khoa
+    - bạn cho tôi biết chức năng và nhiệm vụ của khoa
+    - hãy nêu chức năng và nhiệm vụ của khoa
+- intent: hoi_thongTinKhoaChung_doiNgu
   examples: |
-    - cơ cấu tổ chức khoa CNTT
-    - cơ cấu tổ chức khoa
-    - cơ cấu của khoa
-    - cơ cấu tổ chức
-    - ban chủ nhiệm khoa
-    - giảng viên nào nằm trong ban chủ nhiêm
-    - ban chủ nhiệm
-    - trưởng khoa
-    - ai là trưởng khoa
-    - trưởng khoa cnnt
-    - giảng viên nào là trưởng khoa
-    - phó trưởng khoa
-    - ai là phó trưởng khoa
-    - phó trưởng khoa cnnt
-    - giảng viên nào là phó trưởng khoa
-    - ban giáo vụ
-    - ban giáo vụ khoa
-    - ai là ban giáo vụ khoa
-    - giáo vụ khoa
-    - giáo vụ
+    - hiện nay khoa có bao nhiêu giảng viên
+    - khoa có bao nhieu tiến sĩ, thạc sĩ, giáo sư
+    - cho tôi biết đội ngũ giảng viên của khoa
+- intent: hoi_thongTinKhoaChung_daoTao
+  examples: |
+    - đào tạo của khoa hiện nay như thế nào
+    - cho tôi biết về đào tạo của khoa
+- intent: hoi_thongTinKhoaChung_dinhHuongPhatTrien
+  examples: |
+    - định hướng phát triển của khoa
+    - khoa có dịnh hướng phát triển như thế nào trong tương lai
+- intent: hoi_thongTinKhoaChung_lienHe
+  examples: |
+    - tôi muốn liên hệ khoa
+    - làm sao để liên hệ khoa
+- intent: hoi_thongTinKhoaChung_truongKhoa
+  examples: |
+    - hiện tại ai là trưởng khoa
+    - trưởng khoa qua các thời kỳ
+# Bộ câu hỏi về cán bộ GV từng bộ môn trong khoa
 - intent: hoi_DoiNguGV_KTPM
   examples: |
     - Đội ngũ giảng viên của ngành [kỹ thuật phần mềm](boMon)
@@ -226,6 +248,199 @@ nlu:
     - ai là trưởng bộ môn [KHDL](boMon)
     - hiện tại ai là trưởng bộ môn [KHDL](boMon)
     - phó bôn môn [KHDL](boMon)
+# Bộ câu hỏi về chương trình đào tạo Đại Học các nghành trong khoa
+- intent: hoi_DaoTaoDH_KTPM
+  examples: |
+    - Đào tạo [đại học](capBac) ngành KTPM
+    - cho tôi thông tin về đào tạo [đại học](capBac) ngành KTPM
+    - thông tin về đào tạo [đại học](capBac) ngành KTPM
+    - [sau đại học](capBac) ngành KTPM
+    - chương trình đào tạo [đại học](capBac) ngành KTPM
+    - [đại học](capBac) ngành KTPM khoa đào tạo thế nào?
+    - hiện tại khoa dào tạo hệ đại học ngành KTPM như thế nào?
+    - thầy cô cho em hỏi là khoa Cntt đào tạo hệ đại học ngành KTPM như thế nào ạ
+    - mình có thể biết về đào tạo đại học ngành KTPM của khoa cntt của trường như thế nào không?
+    - đào tạo đại học ngành KTPM của khoa công nghệ thông tin?
+    - chương trình đào tạo đại học ngành KTPM của khoa
+    - đào tạo ĐH ngành KTPM
+    - cho tôi thông tin về đào tạo đại học ngành KTPM của khoa
+    - khoa mình đào tạo hệ đại học ngành KTPM như thế nào
+    - bây giờ cho tôi biết về thông tin đào tạo đại học ngành KTPM của khoa
+    - hệ đại học ngành KTPM khoa mình
+    - tổ hợp môn để đậu hệ đại học ngành KTPM khoa công nghệ thông tin
+    - điều kiện đẻ vào hệ đại học ngành KTPM khoa công nghệ thông tin
+    - Chuẩn đầu vào nghành kỹ thuật phần mền
+    - chuẩn đầu ra nghành KTPM
+    - Mục tiêu đào tạo của ngành KTPM
+    - mục tiêu đào tạo của nghành kỹ thuật phần mềm
+    - Chương trình đào tạo của nghành kỹ thuật phần mềm
+    - sô liệu tuyển sinh của nghành ktpm
+    - số liệu tốt nghiệp hằng năm của nghành kỹ thuật phần mềm
+    - giới thiệu về nghành kỹ thuật phần mềm
+    - vậy cho mình biết về số liệu tuyển sinh của ngành Ktpm
+    - cho tôi biết số liệu tuyển sinh dại học của nghành ktpm
+    - hằng năm có trung bình bao nhiêu sinh viên tốt nghiệp nghành ktpm
+    - mục tiêu đào tạo của nghành kỹ thuật phần mềm
+- intent: hoi_DaoTaoDH_KHMT
+  examples: |
+    - Đào tạo [đại học](capBac) ngành KHMT
+    - cho tôi thông tin về đào tạo [đại học](capBac) ngành KHMT
+    - thông tin về đào tạo [đại học](capBac) ngành KHMT
+    - [sau đại học](capBac) ngành KHMT
+    - chương trình đào tạo [đại học](capBac) ngành KHMT
+    - [đại học](capBac) ngành KHMT khoa đào tạo thế nào?
+    - hiện tại khoa dào tạo hệ đại học ngành KHMT như thế nào?
+    - thầy cô cho em hỏi là khoa Cntt đào tạo hệ đại học ngành KHMT như thế nào ạ
+    - mình có thể biết về đào tạo đại học ngành KHMT của khoa cntt của trường như thế nào không?
+    - đào tạo đại học ngành KHMT của khoa công nghệ thông tin?
+    - chương trình đào tạo đại học ngành KHMT của khoa
+    - đào tạo ĐH ngành KHMT
+    - cho tôi thông tin về đào tạo đại học ngành KHMT của khoa
+    - khoa mình đào tạo hệ đại học ngành KTPM như thế nào
+    - bây giờ cho tôi biết về thông tin đào tạo đại học ngành KHMT của khoa
+    - hệ đại học ngành KHMT khoa mình
+    - tổ hợp môn để đậu hệ đại học ngành KHMT khoa công nghệ thông tin
+    - điều kiện đẻ vào hệ đại học ngành KHMT khoa công nghệ thông tin
+    - Chuẩn đầu vào nghành khoa học máy tính
+    - chuẩn đầu ra ngành KHMT
+    - Mục tiêu đào tạo của ngành KHMT
+    - mục tiêu đào tạo của nghành khoa học máy tính
+    - Chương trình đào tạo của nghành khoa học máy tính
+    - sô liệu tuyển sinh của nghành khmt
+    - số liệu tốt nghiệp hằng năm của nghành khoa học máy tính
+    - giới thiệu về nghành khoa học máy tính
+    - vậy cho mình biết về số liệu tuyển sinh của ngành KHMT
+    - cho tôi biết số liệu tuyển sinh dại học của ngành KHMT
+    - hằng năm có trung bình bao nhiêu sinh viên tốt nghiệp ngành KHMT
+    - mục tiêu đào tạo của nghành khoa học máy tính
+- intent: hoi_DaoTaoDH_CNTT
+  examples: |
+    - Đào tạo [đại học](capBac) ngành cntt
+    - cho tôi thông tin về đào tạo [đại học](capBac) ngành cntt
+    - thông tin về đào tạo [đại học](capBac) ngành cntt
+    - [sau đại học](capBac) ngành cntt
+    - chương trình đào tạo [đại học](capBac) ngành cntt
+    - [đại học](capBac) ngành cntt khoa đào tạo thế nào?
+    - hiện tại khoa dào tạo hệ đại học ngành cntt như thế nào?
+    - thầy cô cho em hỏi là khoa Cntt đào tạo hệ đại học ngành cntt như thế nào ạ
+    - mình có thể biết về đào tạo đại học ngành cntt của khoa cntt của trường như thế nào không?
+    - đào tạo đại học ngành cntt của khoa công nghệ thông tin?
+    - chương trình đào tạo đại học ngành cntt của khoa
+    - đào tạo ĐH ngành cntt
+    - cho tôi thông tin về đào tạo đại học ngành cntt của khoa
+    - khoa mình đào tạo hệ đại học ngành KTPM như thế nào
+    - bây giờ cho tôi biết về thông tin đào tạo đại học ngành cntt của khoa
+    - hệ đại học ngành cntt khoa mình
+    - tổ hợp môn để đậu hệ đại học ngành cntt khoa công nghệ thông tin
+    - điều kiện đẻ vào hệ đại học ngành cntt khoa công nghệ thông tin
+    - Chuẩn đầu vào nghành công nghệ thông tin
+    - chuẩn đầu ra ngành cntt
+    - Mục tiêu đào tạo của ngành cntt
+    - mục tiêu đào tạo của nghành công nghệ thông tin
+    - Chương trình đào tạo của nghành công nghệ thông tin
+    - sô liệu tuyển sinh của nghành khmt
+    - số liệu tốt nghiệp hằng năm của nghành công nghệ thông tin
+    - giới thiệu về nghành công nghệ thông tin
+    - vậy cho mình biết về số liệu tuyển sinh của ngành cntt
+    - cho tôi biết số liệu tuyển sinh dại học của ngành cntt
+    - hằng năm có trung bình bao nhiêu sinh viên tốt nghiệp ngành cntt
+    - mục tiêu đào tạo của nghành công nghệ thông tin
+- intent: hoi_DaoTaoDH_HTTT
+  examples: |
+    - Đào tạo [đại học](capBac) ngành httt
+    - cho tôi thông tin về đào tạo [đại học](capBac) ngành httt
+    - thông tin về đào tạo [đại học](capBac) ngành httt
+    - [sau đại học](capBac) ngành httt
+    - chương trình đào tạo [đại học](capBac) ngành httt
+    - [đại học](capBac) ngành httt khoa đào tạo thế nào?
+    - hiện tại khoa dào tạo hệ đại học ngành httt như thế nào?
+    - thầy cô cho em hỏi là khoa httt đào tạo hệ đại học ngành httt như thế nào ạ
+    - mình có thể biết về đào tạo đại học ngành httt của khoa httt của trường như thế nào không?
+    - đào tạo đại học ngành httt của khoa công nghệ thông tin?
+    - chương trình đào tạo đại học ngành httt của khoa
+    - đào tạo ĐH ngành httt
+    - cho tôi thông tin về đào tạo đại học ngành httt của khoa
+    - khoa mình đào tạo hệ đại học ngành KTPM như thế nào
+    - bây giờ cho tôi biết về thông tin đào tạo đại học ngành httt của khoa
+    - hệ đại học ngành httt khoa mình
+    - tổ hợp môn để đậu hệ đại học ngành httt khoa công nghệ thông tin
+    - điều kiện đẻ vào hệ đại học ngành httt khoa công nghệ thông tin
+    - Chuẩn đầu vào công nghệ thông tin
+    - chuẩn đầu ra ngành httt
+    - Mục tiêu đào tạo của ngành httt
+    - mục tiêu đào tạo của nghành hệ thống thông tin
+    - Chương trình đào tạo của nghành hệ thống thông tin
+    - sô liệu tuyển sinh của nghành khmt
+    - số liệu tốt nghiệp hằng năm của nghành hệ thống thông tin
+    - giới thiệu về nghành hệ thống thông tin
+    - vậy cho mình biết về số liệu tuyển sinh của ngành httt
+    - cho tôi biết số liệu tuyển sinh dại học của ngành httt
+    - hằng năm có trung bình bao nhiêu sinh viên tốt nghiệp ngành httt
+    - mục tiêu đào tạo của nghành hệ thống thông tin
+- intent: hoi_DaoTaoDH_KHDL
+  examples: |
+    - Đào tạo [đại học](capBac) ngành KHDL
+    - cho tôi thông tin về đào tạo [đại học](capBac) ngành KHDL
+    - thông tin về đào tạo [đại học](capBac) ngành KHDL
+    - [sau đại học](capBac) ngành KHDL
+    - chương trình đào tạo [đại học](capBac) ngành KHDL
+    - [đại học](capBac) ngành KHDL khoa đào tạo thế nào?
+    - hiện tại khoa dào tạo hệ đại học ngành KHDL như thế nào?
+    - thầy cô cho em hỏi là khoa KHDL đào tạo hệ đại học ngành KHDL như thế nào ạ
+    - mình có thể biết về đào tạo đại học ngành KHDL của khoa KHDL của trường như thế nào không?
+    - đào tạo đại học ngành KHDL của khoa công nghệ thông tin?
+    - chương trình đào tạo đại học ngành KHDL của khoa
+    - đào tạo ĐH ngành KHDL
+    - cho tôi thông tin về đào tạo đại học ngành KHDL của khoa
+    - khoa mình đào tạo hệ đại học ngành KTPM như thế nào
+    - bây giờ cho tôi biết về thông tin đào tạo đại học ngành KHDL của khoa
+    - hệ đại học ngành KHDL khoa mình
+    - tổ hợp môn để đậu hệ đại học ngành KHDL khoa công nghệ thông tin
+    - điều kiện đẻ vào hệ đại học ngành KHDL khoa công nghệ thông tin
+    - Chuẩn đầu vào nghành khoa học dữ liệu
+    - chuẩn đầu ra ngành KHDL
+    - Mục tiêu đào tạo của ngành KHDL
+    - mục tiêu đào tạo của nghành khoa học dữ liệu
+    - Chương trình đào tạo của nghành khoa học dữ liệu
+    - sô liệu tuyển sinh của nghành khmt
+    - số liệu tốt nghiệp hằng năm của nghành khoa học dữ liệu
+    - giới thiệu về nghành khoa học dữ liệu
+    - vậy cho mình biết về số liệu tuyển sinh của ngành KHDL
+    - cho tôi biết số liệu tuyển sinh dại học của ngành KHDL
+    - hằng năm có trung bình bao nhiêu sinh viên tốt nghiệp ngành KHDL
+    - mục tiêu đào tạo của nghành khoa học dữ liệu
+# Bộ câu hỏi liên quan đến sinh viên
+- intent: hoi_thongBaoSinhVien
+  examples: |
+    - khoa có thông báo gì mới
+    - thông báo của khoa
+    - khoa có thông báo nào không?
+- intent: hoi_thucTapViecLam
+  examples: |
+    - khoa có thông tin tuyển dụng nào không?
+    - khoa có hỗ trợ sinh viên về thực tập không?
+- intent: hoi_thongTinTuyenSinh
+  examples: |
+    - hiên khoa có tuyển sinh sau đại học không?
+    - thông báo tuyển sinh của khoa
+    - tuyển sinh
+- intent: hoi_dangKyDoAn 
+  examples: |
+    - tôi muốn đăng ký đồ án
+    - đăng ký đồ án
+    - đăng ký khóa luận
+    - đồ án tốt nghiệp
+    - làm sao để đăng ký đồ án
+    - phải làm gì để đăng ký đồ án
+# Bộ câu hỏi về đào tạo Cao Đẳng và đào tạo sau ĐH
+- intent: hoi_daoTaoCaoDang 
+  examples: |
+    - khoa mình có đào tạo hệ [cao đẳng](capBac) không?
+    - tôi muốn đăng ký hệ [cao đẳng](capBac)
+    - giới thiệu về hệ [cao đẳng](capBac)
+    - hệ [cao đẳng](capBac)
+    - quá trình đào tạo của hệ [cao đẳng](capBac)
+    - mức học phí của hệ [cao đẳng](capBac)
 - intent: hoi_DaoTaoSauDH
   examples: |
     - Đào tạo [sau đại học](capBac)
@@ -234,15 +449,37 @@ nlu:
     - [sau đại học](capBac)
     - chương trình đào tạo [sau đại học](capBac)
     - [sau đại học](capBac) khoa đào tạo thế nào?
-- intent: hoi_DaoTaoDH
+# một số bộ câu hỏi khác
+- intent: hoi_CoCauToChuc
   examples: |
-    - Đào tạo [đại học](capBac)
-    - cho tôi thông tin về [đại học](capBac)
-    - thông tin về đào tạo [đại học](capBac)
-    - [sau đại học](capBac)
-    - chương trình đào tạo [đại học](capBac)
-    - [đại học](capBac) khoa đào tạo thế nào?
-
-
-
+    - cơ cấu tổ chức khoa CNTT
+    - cơ cấu tổ chức khoa
+    - cơ cấu của khoa
+    - cơ cấu tổ chức
+    - ban chủ nhiệm khoa
+    - giảng viên nào nằm trong ban chủ nhiêm
+    - ban chủ nhiệm
+    - trưởng khoa
+    - ai là trưởng khoa
+    - trưởng khoa cnnt
+    - giảng viên nào là trưởng khoa
+    - phó trưởng khoa
+    - ai là phó trưởng khoa
+    - phó trưởng khoa cnnt
+    - giảng viên nào là phó trưởng khoa
+    - ban giáo vụ
+    - ban giáo vụ khoa
+    - ai là ban giáo vụ khoa
+    - giáo vụ khoa
+    - giáo vụ
+- intent: hoi_doanThanhNien  
+  examples: |
+    - quá trình hoạt động của đoàn thanh niên
+    - đoàn thanh niên của khoa
+    - hoạt động của đoàn thanh niên
+    - chi tiết về đoàn thanh niên
+- intent: hoi_tinTucSuKien
+  examples: |
+    - khoa có sự kiện nào không?
+    - một số tin tức mới của khoa
     

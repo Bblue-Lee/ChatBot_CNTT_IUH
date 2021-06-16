@@ -82,3 +82,39 @@ stories:
   steps:
   - intent: hoi_DoiNguGV_HTMT
   - action: action_hoi_DoiNguGV_HTMT
+- story: thông báo của khoa
+  steps:
+  - intent: hoi_thongBaoSinhVien
+  - action: action_hoi_thongBaoSinhVien
+- story: tổng quát về khoa
+  steps:
+  - intent: hoi_thongTinKhoaChung_tongQuat
+  - action: utter_hoi_thongTinKhoaChung_tongQuat
+- story: sứ mệnh của khoa
+  steps:
+  - intent: hoi_thongTinKhoaChung_suMenh
+  - action: utter_hoi_thongTinKhoaChung_suMenh
+- story: đội ngũ cảu khoa
+  steps:
+  - intent: hoi_thongTinKhoaChung_doiNgu
+  - action: utter_hoi_thongTinKhoaChung_doiNgu
+- story: khoa đào tạo như thế nào 
+  steps:
+  - intent: hoi_thongTinKhoaChung_daoTao
+  - action: utter_hoi_thongTinKhoaChung_daoTao
+- story: tầm nhìn cảu khoa
+  steps:
+  - intent: hoi_thongTinKhoaChung_tamNhin
+  - action: utter_hoi_thongTinKhoaChung_tamNhin
+- story: hoi về việc tuyển sinh cảu khoa
+  steps:
+  - intent: hoi_thongTinTuyenSinh
+  - action: action_hoi_thongBaoTuyenSinh
+- story: hoi_thucTapViecLam
+  steps:
+  - intent: hoi_thucTapViecLam
+  - action: action_hoi_thucTapViecLam
+- story: hỏi về tin tức sự kiện trong khoa
+  steps:
+  - intent: hoi_tinTucSuKien
+  - action: action_hoi_tinTucSuKien
