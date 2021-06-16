@@ -415,15 +415,63 @@ nlu:
     - khoa có thông báo gì mới
     - thông báo của khoa
     - khoa có thông báo nào không?
+    - thông báo mới nhất của khoa
+    - khoa cntt có thông báo nào mới nhất
+    - thông báo của khoa nào có nhiều người theo dõi nhất
+    - thông báo sinh viên
+    - thông báo ngành cntt
+    - thông báo sinh viên ngành htmt
+    - thông báo sinh sinh viên ngành khmt
+    - thông báo sinh viên nghành khdl
+    - lịch thi trên thông báo sinh viên
+    - cho tôi vào mục thông báo sinh viên
+    - thông báo ngành CNTT
+    - thông báo sinh viên ngành HTMT
+    - thông báo sinh sinh viên ngành KHMT
+    - thông báo sinh viên nghành KHDL
 - intent: hoi_thucTapViecLam
   examples: |
     - khoa có thông tin tuyển dụng nào không?
     - khoa có hỗ trợ sinh viên về thực tập không?
+    - khoa có giới thiệu chỗ thực tập cho sinh viên không?
+    - khoa có giới thiệu việc làm cho sinh viên không?
+    - học ngành khdl ra đi làm những gì
+    - học ngành cntt ra đi làm những gì   
+    - khoa có tạo điều kiện cho sinh viên tìm chỗ thực tập không?
+    - muốn đi thực tập thì cần những điều kiện gì?
+    - khoa có hỗ trợ việc làm cho sinh viên không?
+    - những cơ hội để có thể đi làm
+    - học ngành htmt ra đi làm những gì
+    - học ngành CNTT ra đi làm những gì
+    - khi thực tập xong cần làm những gì
+    - đã thực tập nhưng chưa nộp báo cáo thì phải làm sao
+    - nếu đi thực tập trễ chưa có dấu mộc báo cáo thì xin gia hạn ở đâu
+    - hạn nộp báo cáo thực tập 
+    - hoàn thành thực tập cần những gì
+    - những yếu tố cơ bản để được đi thực tập
+    - học ngành khmt ra đi làm những gì
+    - học ngành KHMT ra đi làm những gì
 - intent: hoi_thongTinTuyenSinh
   examples: |
     - hiên khoa có tuyển sinh sau đại học không?
     - thông báo tuyển sinh của khoa
     - tuyển sinh
+    - khoa tuyển sinh như thế nào
+    - những thông tin tuyển sinh cơ bản
+    - tôi muốn học tại trường thì cần những gì?
+    - tôi muốn học lên thạc sĩ thì phải là sao?
+    - tôi muốn học lên tiến sĩ thì cần làm những gì?
+    - tôi phải làm gì để học lên thạc sĩ?
+    - tôi phải làm gì để học lên tiến sĩ?
+    - tôi muốn học lên thạc sĩ ngành khoa học máy tính
+    - tuyển sinh cao học
+    - tuyển sinh đại học liên thông cao đẳng lên đại học
+    - thông báo tuyển sinh hệ cao đẳng của khoa
+    - cần làm những gì để được tuyển sinh vào trường
+    - chỉ tiêu tuyển sinh để học lên thạc sĩ
+    - chỉ tiêu tuyển sinh để học lên tiến sĩ
+    - thông tin tuyển sinh đại học
+    - thông tin tuyển sinh cao đẳng
 - intent: hoi_dangKyDoAn 
   examples: |
     - tôi muốn đăng ký đồ án
@@ -482,4 +530,17 @@ nlu:
   examples: |
     - khoa có sự kiện nào không?
     - một số tin tức mới của khoa
+    - bạn cho tôi biết 1 số sự kiện được tổ chức trong khoa gần đây?
+    - tôi muốn xem tin tức của khoa
+    - tôi muốn xem khoa có tin tức sự kiện nào mới không
+    - bạn có thể cho tôi biết khoa hiện có sự kiện nào không?
+    - Khoa có tổ chức hội thảo nào trong tuần tới không?
+    - có khóa học nào được khoa tổ chức trong thời gian tới không?
+    - bây giờ tôi muốn biết được khoa có tổ chức văn nghệ không?
+    - văn nghệ của khoa như thế nào
+    - cho tôi xem các hội thảo, hội nghị của khoa
+    - bạn có thể cho tôi xem các sự kiên nào mới được khoa tổ chức không?
+    - tôi muốn xem các sự kiên đã được khoa tổ chức
+    - tôi muốn xem các tin tức của khoa
+    - tôi
     
