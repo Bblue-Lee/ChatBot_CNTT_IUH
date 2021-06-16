@@ -67,28 +67,34 @@ responses:
   - text: "OK bye"
   utter_khen:
   - text: "Bạn quá khen, đó là công việc của tôi. Bạn còn cần giúp gì nữa không?"
-  - text: "Ko có gì, giúp bạn là nhiệm vụ của tôi"
+  - text: "Không có gì, giúp bạn là nhiệm vụ của tôi"
   - text: "Đó là niềm vui của tôi"
+  - text: "Tuyệt vời, thật hạnh phúc"
+  - text: "Cảm ơn bạn rất nhiều!"
+  - text: "Cảm ơn lời khen của bạn, chúng tôi sẽ tiếp tục hoàn thiện hơn!"
   utter_che:
   - text: "Sorry, đã không giúp được bạn"
+  - text: "Xin lỗi vì đã không giúp được bạn"
   - text: "Xin lỗi không giúp được, bạn có thể truy cập http://fit.iuh.edu.vn để xem thông tin cụ thể "
   utter_Ask_giupDO:
   - text: "Vâng, tôi có thể giúp gì bạn?"
   - text: "Đương nhiên, bạn cần gì?"
   - text: "Tôi luôn sẵn lòng giúp đỡ, bạn cần hỗ trợ về vấn đề gì"
+  - text: "Bạn có thể cho tôi biết bạn cần gì?"
   utter_Ask_chucNang:
   - text: "Tôi có thể tử vấn các vấn đề liên quan đến khoa CNTT"
   - text: "Tôi có thể nói chuyện với bạn và hỗ trợ các tư vấn các thông tin về khoa CNTT-IUH"
   utter_Ask_botAI:
   - text: "Vâng tôi là bot được con người tạo ra"
+  - text: "Tôi là một bot"
   - text: "Tôi là 1 chương trình máy tính, có khả năng trò chuyện và hỗ trợ con người"
   utter_hoi_thongTinKhoaChung:
   - text: "Khoa Công nghệ thông tin (CNTT) được hình thành từ năm 1996, Trải qua chặng đường dài không ngừng nỗ lực hoàn thiện và phát triển, Khoa CNTT đang từng bước khẳng định uy tín của mình với phương châm “Đào tạo sinh viên vững lý thuyết, giỏi thực hành và làm chủ công nghệ mới”. Xem chi tiết tại: http://fit.iuh.edu.vn/category.html@163@Gioi-thieu-ve-khoa"
   utter_hoi_dangKyDoAn:
   - text: "Bạn có thể truy cập link để đăng ký: https://phuoccse.com/fit/dangkydoan/dang-ky-do-an.php"
   utter_hoi_daoTaoCaoDang:
-  - text: "Hiện tại tôi chưa có thông tin về đào tạo hệ Cao Đằng. Bạn có thể liên hệ Giáo vụ khoa để hỏi chi tiết hơn"
-  utter_hoi_doanThanhNien: 
+  - text: "Hiện tại tôi chưa có thông tin về đào tạo hệ Cao Đằng. Bạn có thể liên hệ trực tiếp Giáo vụ khoa để hỏi chi tiết hơn"
+  utter_hoi_doanThanhNien:
   - text: "Bạn có thể truy cập link sau đề xem thông tin chi tiết: http://doankhoacntt.com/"
   utter_hoi_daoTaoSauDaiHoc:
   - text: "Từ năm 2019 Khoa Công nghệ thông tin – Trường Đại học Công nghiệp TP. Hồ Chí Minh được giao nhiệm vụ tuyển sinh và đào tạo tiến sĩ ngành Khoa học máy tính (KHMT)- mã ngành 9480101. Đây là bước tiến quan trọng mang tính đột phát trong sự nghiệp đào tạo ở Khoa CNTT và nhà trường.\n
@@ -126,7 +132,7 @@ responses:
   utter_hoi_thongTinKhoaChung_truongKhoa:
   - text: ""
   utter_fallback:
-  - text: "Xin lỗi, tôi không hiểu bạn nói về vấn đề gì"
+  - text: "Thật xin lỗi, tôi không hiểu bạn nói về vấn đề gì"
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
