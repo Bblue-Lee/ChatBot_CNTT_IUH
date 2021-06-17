@@ -1,9 +1,14 @@
 version: "2.0"
-
 nlu:
-# Bộ câu hỏi cơ bản
 - intent: chaoHoi
   examples: |
+    - chào buổi sáng
+    - buổi sáng tốt lành
+    - chào buổi tối
+    - chào buổi chiều
+    - này
+    - hai
+    - hi
     - hey
     - hello
     - chào
@@ -13,6 +18,7 @@ nlu:
     - hi there
     - xin chao
     - xin chào bạn
+    - chào bot
 - intent: tamBiet
   examples: |
     - bye
@@ -21,8 +27,17 @@ nlu:
     - have a nice day
     - tạm biệt
     - nói chuyện sau
+    - lúc khác gặp lại
+    - gặp lại sau
+    - ok tạm biệt
 - intent: khen
   examples: |
+    - tuyệt vời
+    - rất tốt
+    - tuyệt
+    - đáng kinh ngạc
+    - hoàn hảo
+    - tôi cảm thấy rất tuyệt
     - wow
     - you are good
     - thanks for help
@@ -32,65 +47,133 @@ nlu:
     - cảm ơn rất nhiều
     - em cảm ơn ạ
     - cảm ơn ạ
+    - cảm ơn bạn
+    - cảm ơn sự hỗ trợ từ bạn
+    - sự hỗ trợ của bạn rất hữu ích
+    - các thông tin bạn cung cấp cho tôi rất tốt
+    - thật sự những thông tin mà bạn cung cấp cho tôi giúp ích rất nhiều cho tôi
+    - ok cảm ơn nhiều
 - intent: cheBai
   examples: |
+    - ko tốt chút nào
     - bạn tệ quá
+    - buồn ghê
+    - quá buồn
+    - quá chán
+    - tệ
+    - rất tệ
+    - tồi tệ
+    - kinh khủng
+    - không ổn lắm
+    - cực kỳ chán
+    - cực kỳ buồn chán
     - tệ quá
     - ngu ngốc
     - không hữu ích
     - không làm được gì hết
-    - bạn không giúp được tôi à?
+    - bạn không giúp được tôi à
     - quá tệ
     - không ra gì
     - thông tin không hữu ích
 - intent: hoi_giupDo
   examples: |
-    - bạn có thể giúp tôi không?
-    - giúp tôi?
-    - giúp tý?
+    - bạn có thể giúp tôi không
+    - giúp tôi
+    - giúp tý
+    - giúp với
     - giúp
+    - hỗ trợ
     - tư vấn
-    - tư vấn cho tôi?
+    - tư vấn cho tôi
+    - tôi muốn được tư vấn một số vấn đề?
+    - thầy cô cho em hỏi 1 số vấn đề được không?
 - intent: hoi_chucNang
   examples: |
-    - bạn có thể làm gì?
-    - có thể làm gì?
-    - bạn có thể làm gì cho tôi?
-    - làm gì cho tôi?
-    - cho tôi?
+    - bạn có thể làm gì
+    - bạn có thể làm gì nào
+    - có thể làm gì
+    - bạn có thể làm gì cho tôi
+    - làm gì cho tôi
+    - bạn có chức năng gì
+    - nhiệm vụ cảu bạn là gì
     - bạn hỗ trợ về vấn đề gì
-    - hỗ trợ gì cho tôi?
+    - hỗ trợ gì cho tôi
     - chức năng gì
-    - bạn có chức năng gì?
     - giới thiệu chức năng của bạn
-    - chức năng của bạn?
-    - bạn biết những gì?
-    - biết làm gì?
+    - chức năng của bạn
+    - bạn biết những gì
+    - biết làm gì
 - intent: hoi_botAI
   examples: |
-    - bạn là bot à?
-    - bạn có phải con người không?
-    - bot à?
-    - giới thiệu bản thân bạn?
-    - bạn là ai?
+    - bạn là robot
+    - tôi đang nói chuyện với một con bot
+    - tôi có đang nói chuyện với con người không
+    - bạn được việc không
+    - kiểm tra
+    - bạn biết làm gì
+    - bạn có thể làm gì nào
+    - bạn có thể giúp gì cho tôi
+    - bạn là nam hay nữ
+    - bạn là bot à
+    - bạn có phải con người không
+    - bot à
+    - bot
+    - giới thiệu bản thân bạn
+    - bạn là ai
     - bản thân bạn
     - AI
+    - tôi đang trò chuyện với AI à?
+    - không biết tôi đang trò chuyện với ai đây?
+    - bạ có phả là robot không?
 - intent: dongY
   examples: |
-    - có 
+    - có
     - tôi muốn hỏi tiếp
     - vâng tôi muốn bạn tư vấn thêm
     - vâng
     - yes
     - đương nhiên
     - có, bạn có thể cho tôi biết
-# Bộ câu hỏi về phần giới thiêu khoa
+# Bộ câu hỏi về khoa tổng quát
+- intent: hoi_thongTinKhoaChung_tongQuat
+  examples: |
+    - bạn có thể cho tôi thông tin về khoa được không?
+    - thông tin tổng quát về khoa
+    - hãy giới thiệu tổng quát về khoa
+    - tôi muốn biết thông tin về khoa cntt của trường
+    - bây giờ bạn có thể cho tôi biết thông tin chung về khoa được không?
+    - bạn có thể giới thiệu về khoa
+    - bạn hãy nêu những thông tin cơ bản về khoa
+    - thông tin về khoa
+    - bạn có thể cho tôi biết được thông tin về khoa hay không?
+    - không biết khoa mình hình thành từ năm nào?
+    - bạn cho tôi biết khoa cntt của trường hình thành từ năm bao nhiêu không?
+    - bạn cho tôi biết khoa cntt của trường đại học công nghiêp hình thành từ năm bao nhiêu không?
+    - admin cho mình biết là khoa cntt có phương châm như thế nào?
+    - tôi muốn biết phương châm cảu khoa cntt
+    - phương châm khoa công nghệ thông tin
+    - khoa cntt hình thành khi nào
+    - khoa công nghệ thông tin thành lập vào thời gian nào?
+    - thời gian thành lập khoa công nghệ thông tin
+    - hãy cho tôi biết năm thành lập khoa công nghệ thông tin
+    - hãy cho tôi biết năm thành lập khoa
+    - tôi muốn biết năm thành lập của khoa cntt
+    - cho tôi hỏi năm thành lập của khoa
+    - bây giờ cho tôi biết phương châm của khoa cntt là gì?
+    - khoa cnntt hình thành từ khi nào và phương châm của khoa là gì?
+    - admin cho tôi biết là thời gian hình thành khoa công nghệ thông tin
 - intent: hoi_thongTinKhoaChung_tamNhin
   examples: |
     - bạn hãy nêu cho tôi tầm nhìn của khoa trong những năm tới
     - cho tôi biết tầm nhìn của khoa
     - tầm nhìn của khoa
     - tầm nhìn
+    - không biết khoa cntt có tầm nhìn như thế nào đối với quá trình hội nhập quốc tế hiện nay
+    - bạn có thể cho biết tôi biết tầm nhìn của khoa như thế nào đối với hoàn cảnh hiện tại
+    - với tình hình hiện tại thì khoa công nghệ thông tin của trưởng mình có tầm nhìn nhử thế nào?
+    - hãy nêu lên tầm nhìn của khoa trong thời đại 4.0 hiện nay
+    - không biết tầm nhìn của khoa nhử thế nào vây?
+    - đối với khoa cntt thì tầm nhìn như thế nào?
 - intent: hoi_thongTinKhoaChung_suMenh
   examples: |
     - hãy nêu sứ mệnh của khoa công nghệ thông tin
@@ -98,12 +181,21 @@ nlu:
     - sứ mệnh của khoa
     - sứ mệnh
     - sứ mênh của khoa
+    - khoa có sứ mệnh như thế nào đối với quá trình đào tạo thế hệ trẻ
+    - tôi muốn biết sứ mệnh của khoa như thế nào
+    - bây giờ bạn có thể nêu lên sứ mệnh cảu khoa trong việc đào tạo nguồn nhân lực cho xã hội
+    - tôi muốn xem khoa có sứ mệnh như thé nào trong thởi buổi hiện nay
 - intent: hoi_thongTinKhoaChung_chucNangNhiemVu
   examples: |
     - chức năng của khoa
     - nhiệm vụ của khoa
     - bạn cho tôi biết chức năng và nhiệm vụ của khoa
     - hãy nêu chức năng và nhiệm vụ của khoa
+    - tôi muốn biết chức năng của khoa
+    - tôi muốn biết chức năng, nhiêm vụ của khoa công nghẹ thông tin
+    - tôi muốn biết chức năng, nhiêm vụ của khoa cntt
+    - chức năng chính của khoa cntt
+    - bây giờ tôi muốn biết
 - intent: hoi_thongTinKhoaChung_doiNgu
   examples: |
     - hiện nay khoa có bao nhiêu giảng viên
@@ -113,6 +205,9 @@ nlu:
   examples: |
     - đào tạo của khoa hiện nay như thế nào
     - cho tôi biết về đào tạo của khoa
+    - bạn hãy cho tôi biết thông tin về đào tạo của khoa như thế nào
+    - tôi muốn biết thêm thông tin về đào tạo của khoa
+    - ok, vậy giờ hãy cho tôi biết thêm về việc khoa đào tạo các cấp bậc như thế nào?
 - intent: hoi_thongTinKhoaChung_dinhHuongPhatTrien
   examples: |
     - định hướng phát triển của khoa
@@ -121,17 +216,29 @@ nlu:
   examples: |
     - tôi muốn liên hệ khoa
     - làm sao để liên hệ khoa
+    - mình có gặp một số vấn đề, không biết mình có thể liên hệ với khoa như thể nào?
+    - bây giờ làm sao để liên hệ với khoa cntt
+    - liên hệ khoa công nghệ thông tin
+    - 
 - intent: hoi_thongTinKhoaChung_truongKhoa
   examples: |
     - hiện tại ai là trưởng khoa
     - trưởng khoa qua các thời kỳ
-# Bộ câu hỏi về cán bộ GV từng bộ môn trong khoa
+    - bạn có thể cho tôi biết các trưởng khoa không?
+    - bây giờ tôi muốn xem các vị trưởng khoa trong các giai đoạn hình thành khoa?
+    - bạn có biết hiện nay ai là trưởng khoa cntt không?
+    - hãy cho tôi biết trưởng khoa cntt
+    - ok, bây giờ tôi muốn biết được ai là trưởng khoa công nghệ thông tin
+    - tôi muôn gặp trưởng khoa công nghệ thông tin, bạn có thể cho tôi thông tin không?
+    - bạn hãy cho tôi biết trưởng khoa
+    - tôi muốn xem thông tin về trưởng khoa cntt
+    - không biết bây giờ ai là trưởng khoa công nghệ thông tin vây?
+# Bộ câu hỏi về giảng viên các bộ môn
 - intent: hoi_DoiNguGV_KTPM
   examples: |
     - Đội ngũ giảng viên của ngành [kỹ thuật phần mềm](boMon)
     - Giảng viên [kỹ thuật phần mềm](boMon)
     - cho tôi biết đội ngũ giảng viên của ngành [KTPM](boMon)
-    - giảng viên bộ môn [kỹ thuật phần mềm](boMon)
     - giảng viên bộ môn [KTPM](boMon)
     - giảng viên [KTPM](boMon)
     - GV [KTPM](boMon)
@@ -196,7 +303,7 @@ nlu:
     - ai là trưởng bộ môn [KHDL](boMon)
     - hiện tại ai là trưởng bộ môn [KHDL](boMon)
     - phó bôn môn [KHDL](boMon)
-# Bộ câu hỏi về chương trình đào tạo Đại Học các nghành trong khoa
+# Bộ câu hỏi về chương trình đào tạo
 - intent: hoi_DaoTaoDH_KTPM
   examples: |
     - Đào tạo [đại học](capBac) ngành KTPM
@@ -228,7 +335,6 @@ nlu:
     - vậy cho mình biết về số liệu tuyển sinh của ngành Ktpm
     - cho tôi biết số liệu tuyển sinh dại học của nghành ktpm
     - hằng năm có trung bình bao nhiêu sinh viên tốt nghiệp nghành ktpm
-    - mục tiêu đào tạo của nghành kỹ thuật phần mềm
 - intent: hoi_DaoTaoDH_KHMT
   examples: |
     - Đào tạo [đại học](capBac) ngành KHMT
@@ -260,7 +366,6 @@ nlu:
     - vậy cho mình biết về số liệu tuyển sinh của ngành KHMT
     - cho tôi biết số liệu tuyển sinh dại học của ngành KHMT
     - hằng năm có trung bình bao nhiêu sinh viên tốt nghiệp ngành KHMT
-    - mục tiêu đào tạo của nghành khoa học máy tính
 - intent: hoi_DaoTaoDH_CNTT
   examples: |
     - Đào tạo [đại học](capBac) ngành cntt
@@ -292,7 +397,7 @@ nlu:
     - vậy cho mình biết về số liệu tuyển sinh của ngành cntt
     - cho tôi biết số liệu tuyển sinh dại học của ngành cntt
     - hằng năm có trung bình bao nhiêu sinh viên tốt nghiệp ngành cntt
-    - mục tiêu đào tạo của nghành công nghệ thông tin
+    - ok, vậy bây giờ tôi muốn đăng ký hệ đại học của khoa không biết có yêu cầu gì không?
 - intent: hoi_DaoTaoDH_HTTT
   examples: |
     - Đào tạo [đại học](capBac) ngành httt
@@ -324,7 +429,6 @@ nlu:
     - vậy cho mình biết về số liệu tuyển sinh của ngành httt
     - cho tôi biết số liệu tuyển sinh dại học của ngành httt
     - hằng năm có trung bình bao nhiêu sinh viên tốt nghiệp ngành httt
-    - mục tiêu đào tạo của nghành hệ thống thông tin
 - intent: hoi_DaoTaoDH_KHDL
   examples: |
     - Đào tạo [đại học](capBac) ngành KHDL
@@ -356,24 +460,89 @@ nlu:
     - vậy cho mình biết về số liệu tuyển sinh của ngành KHDL
     - cho tôi biết số liệu tuyển sinh dại học của ngành KHDL
     - hằng năm có trung bình bao nhiêu sinh viên tốt nghiệp ngành KHDL
-    - mục tiêu đào tạo của nghành khoa học dữ liệu
-# Bộ câu hỏi liên quan đến sinh viên
+# Bộ câu hỏi khác
 - intent: hoi_thongBaoSinhVien
   examples: |
     - khoa có thông báo gì mới
     - thông báo của khoa
     - khoa có thông báo nào không?
+    - hiện kho có thông báo nào mới không?
+    - thông báo sinh viên?
+    - khoa có thông báo về báo các thưc tập, đồ án tốt nghiệp không?
+    - hiện tôi muốn biết về lịch thi các môn, không biết khoa có thông báo nào về lich thi không?
+    - bây giờ tôi muốn xem các thông báo mới nhât của khoa cntt
+    - bạn có thể cho tôi xem các thông báo mới nhất của khoa  không?
+    - ok, vậy hãy cho tôi thông biết thông báo nòa mới nhất của khoa vừa được thông báo trên khoa cntt.
+    - tôi muốn xem các thông báo
+    - cho tôi hỏi là hiện tại khoa có thông báo nòa về thực tập không?
+    - cho tôi hỏi là hiện tại khoa có thông báo nòa về khóa luân không?
+    - khoa cntt có thông báo nào mới nhất
+    - thông báo của khoa nào có nhiều người theo dõi nhất
+    - thông báo sinh viên
+    - thông báo ngành cntt
+    - thông báo sinh viên ngành htmt
+    - thông báo sinh sinh viên ngành khmt
+    - thông báo sinh viên nghành khdl
+    - lịch thi trên thông báo sinh viên
+    - cho tôi vào mục thông báo sinh viên
+    - thông báo ngành CNTT
+    - thông báo sinh viên ngành HTMT
+    - thông báo sinh sinh viên ngành KHMT
+    - thông báo sinh viên nghành KHDL
 - intent: hoi_thucTapViecLam
   examples: |
     - khoa có thông tin tuyển dụng nào không?
     - khoa có hỗ trợ sinh viên về thực tập không?
+    - khoa có thông tin tuyển dụng nào không?
+    - khoa có hỗ trợ sinh viên về thực tập không?
+    - khoa có giới thiệu chỗ thực tập cho sinh viên không?
+    - khoa có giới thiệu việc làm cho sinh viên không?
+    - học ngành khdl ra đi làm những gì
+    - học ngành cntt ra đi làm những gì
+    - khoa có tạo điều kiện cho sinh viên tìm chỗ thực tập không?
+    - muốn đi thực tập thì cần những điều kiện gì?
+    - khoa có hỗ trợ việc làm cho sinh viên không?
+    - những cơ hội để có thể đi làm
+    - học ngành htmt ra đi làm những gì
+    - học ngành CNTT ra đi làm những gì
+    - khi thực tập xong cần làm những gì
+    - đã thực tập nhưng chưa nộp báo cáo thì phải làm sao
+    - nếu đi thực tập trễ chưa có dấu mộc báo cáo thì xin gia hạn ở đâu
+    - hạn nộp báo cáo thực tập
+    - hoàn thành thực tập cần những gì
+    - những yếu tố cơ bản để được đi thực tập
+    - học ngành khmt ra đi làm những gì
+    - học ngành KHMT ra đi làm những gì 
 - intent: hoi_thongTinTuyenSinh
   examples: |
     - hiên khoa có tuyển sinh sau đại học không?
     - thông báo tuyển sinh của khoa
     - tuyển sinh
     - tôi muốn xem thông tin tuyển sinh của khoa?
-- intent: hoi_dangKyDoAn 
+    - hiện khoa có tuyển sinh sau đại học không?
+    - thông báo tuyển sinh
+    - bot cho mình biết thông tin tuyển sinh
+    - chi tiết thông tin tuyển sinh
+    - chi tiết tuyển sinh
+    - thông báo tuyển sinh của khoa
+    - tuyển sinh
+    - khoa tuyển sinh như thế nào
+    - những thông tin tuyển sinh cơ bản
+    - tôi muốn học tại trường thì cần những gì?
+    - tôi muốn học lên thạc sĩ thì phải là sao?
+    - tôi muốn học lên tiến sĩ thì cần làm những gì?
+    - tôi phải làm gì để học lên thạc sĩ?
+    - tôi phải làm gì để học lên tiến sĩ?
+    - tôi muốn học lên thạc sĩ ngành khoa học máy tính
+    - tuyển sinh cao học
+    - tuyển sinh đại học liên thông cao đẳng lên đại học
+    - thông báo tuyển sinh hệ cao đẳng của khoa
+    - cần làm những gì để được tuyển sinh vào trường
+    - chỉ tiêu tuyển sinh để học lên thạc sĩ
+    - chỉ tiêu tuyển sinh để học lên tiến sĩ
+    - thông tin tuyển sinh đại học
+    - thông tin tuyển sinh cao đẳng
+- intent: hoi_dangKyDoAn
   examples: |
     - tôi muốn đăng ký đồ án
     - đăng ký đồ án
@@ -381,8 +550,12 @@ nlu:
     - đồ án tốt nghiệp
     - làm sao để đăng ký đồ án
     - phải làm gì để đăng ký đồ án
-# Bộ câu hỏi về đào tạo Cao Đẳng và đào tạo sau ĐH
-- intent: hoi_daoTaoCaoDang 
+    - làm sao để đăng ký đồ án tôt nghiệp
+    - hãy chỉ tôi cách đăng ký đồ án tốt nghiệp
+    - đăng ký đồ án dành cho sinh vien
+    - sô liệu đăng ký đồ án của khoa niên khóa 2020-2021
+    - thời gian đăng ký đồ án như thế nào vậy, không biết bây giờ đăng ký còn kịp không?
+- intent: hoi_daoTaoCaoDang
   examples: |
     - khoa mình có đào tạo hệ [cao đẳng](capBac) không?
     - tôi muốn đăng ký hệ [cao đẳng](capBac)
@@ -390,6 +563,8 @@ nlu:
     - hệ [cao đẳng](capBac)
     - quá trình đào tạo của hệ [cao đẳng](capBac)
     - mức học phí của hệ [cao đẳng](capBac)
+    - tôi muốn xem thông tin về đào tạo hệ cao đẳng
+    - bạn có thể giới thiệu về hệ cao đẳng của khoa được không
 - intent: hoi_DaoTaoSauDH
   examples: |
     - Đào tạo [sau đại học](capBac)
@@ -398,14 +573,17 @@ nlu:
     - [sau đại học](capBac)
     - chương trình đào tạo [sau đại học](capBac)
     - [sau đại học](capBac) khoa đào tạo thế nào?
-# một số bộ câu hỏi khác
 - intent: hoi_CoCauToChuc
   examples: |
     - cơ cấu tổ chức khoa CNTT
+    - ok, vậy giờ tôi muốn biết ai là trưởng khoa cntt thì sao?
     - cơ cấu tổ chức khoa
     - cơ cấu của khoa
+    - hãy cho tôi xem cơ cấu tổ chức của khoa
+    - hiện tại ai là trường khoa, ai là phó trưởng khoa vậy
     - cơ cấu tổ chức
     - ban chủ nhiệm khoa
+    - không biết khoa cntt tổ chức như thế nào
     - giảng viên nào nằm trong ban chủ nhiêm
     - ban chủ nhiệm
     - trưởng khoa
@@ -421,7 +599,8 @@ nlu:
     - ai là ban giáo vụ khoa
     - giáo vụ khoa
     - giáo vụ
-- intent: hoi_doanThanhNien  
+    - giờ cho tôi thông tin về cơ cấu tổ chức của khoa được không?
+- intent: hoi_doanThanhNien
   examples: |
     - quá trình hoạt động của đoàn thanh niên
     - đoàn thanh niên của khoa
@@ -431,4 +610,12 @@ nlu:
   examples: |
     - khoa có sự kiện nào không?
     - một số tin tức mới của khoa
-  
+    - trong khoa hiện tại có sự kiện nào không?
+    - trong thời gian tới khoa có tổ chức sự kiện nào không?
+    - sự kiện nổi bật của khoa trong năm vừa qua?
+    - ok, bạn có thể cho tôi biết hè này khoa có sự kiện nào đáng chú ý không?
+    - Tôi muốn cập nhật một số tin tức mới của khoa
+    - tin tức mới nhất của khoa
+    - tôi muốn xem tin tức mới nhất của khoa công nghệ thông tin
+    - bạn có thể nói cho tôi biết sự kiện trung thu sẽ diễn ra vào lúc nòa không?
+    - làm ơn cho tôi biết hội thao của khoa sẽ tổ chức như thế nào
