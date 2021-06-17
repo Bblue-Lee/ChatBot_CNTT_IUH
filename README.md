@@ -11,7 +11,6 @@ Project của chúng tôi sử dụng 1 số công cụ cần thiết sau, bạn
 * ...
 Các thư viện cần thiết chúng tôi đã liệt kê trong file requirment.txt, bạn chỉ cần cài đặt theo hướng dẫn.
 ### ***Cách cài đặt***
-** Cài đặt môi trường rasa
 * Bạn có thể cài đặt các thư viện bằng lệnh sau: *pip install -r requirments.txt*
 ### ***Cách sử dụng***
 * Sau khi cài đặt các công cụ cần thiết thì làm theo các bước sau để chạy project:
