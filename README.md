@@ -1,8 +1,15 @@
 ## ChatBot_CNTT_IUH
-
-### **Tổng quan**
-*Với mong muốn xây dựng và ứng dụng Chatbot cho Khoa Công nghệ thông tin trong thời gian sắp tới, chúng tôi quyết định nghiên cứu đề tài: “Xây dựng Chatbot cho Khoa Công nghệ thông tin trường Đại học Công nghiệp Thành phố Hồ Chí Minh”.# ***Các công cụ cần thiết cho project***
-Project của chúng tôi sử dụng 1 số công cụ cần thiết sau, bạn cần đảm bảo là đã cài đặt các công cụ cần thiết để tiếp tục:
+*in nghiêng*
+**bôi đậm**
+***nghiêng+đâm***
+`code`
+[tittle](link)
+* item1
+* item2
+### ***Tổng quan**
+*Với mong muốn xây dựng và ứng dụng Chatbot cho Khoa Công nghệ thông tin trong thời gian sắp tới, chúng tôi quyết định nghiên cứu đề tài: “Xây dựng Chatbot cho Khoa Công nghệ thông tin trường Đại học Công nghiệp Thành phố Hồ Chí Minh”.
+### ***Các công cụ cần thiết cho project***
+####Project của chúng tôi sử dụng 1 số công cụ cần thiết sau, bạn cần đảm bảo là đã cài đặt các công cụ cần thiết để tiếp tục:
 * Python
 * Rasa
 * TensorFlow
@@ -11,7 +18,6 @@ Project của chúng tôi sử dụng 1 số công cụ cần thiết sau, bạn
 * ...
 Các thư viện cần thiết chúng tôi đã liệt kê trong file requirment.txt, bạn chỉ cần cài đặt theo hướng dẫn.
 ### ***Cách cài đặt***
-** Cài đặt môi trường rasa
 * Bạn có thể cài đặt các thư viện bằng lệnh sau: *pip install -r requirments.txt*
 ### ***Cách sử dụng***
 * Sau khi cài đặt các công cụ cần thiết thì làm theo các bước sau để chạy project:
