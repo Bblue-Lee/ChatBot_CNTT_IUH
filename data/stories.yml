@@ -11,6 +11,17 @@ stories:
   steps:
   - intent: tamBiet
   - action: utter_tamBiet
+- story: chaoHoiThuong
+  steps:
+  - intent: chaoHoi
+  - action: utter_chaoHoi
+  - intent: tamBiet
+  - action: utter_tamBiet
+  - checkpoint: check_asked_chaoHoi
+- story: tamBiet
+  steps:
+  - intent: tamBiet
+  - action: utter_tamBiet
 - story: khenBot
   steps:
   - intent: khen
