@@ -637,12 +637,25 @@ nlu:
     - [sau đại học](capBac)
     - chương trình đào tạo [sau đại học](capBac)
     - [sau đại học](capBac) khoa đào tạo thế nào?
+    - cho tui hỏi đào tạo [sau đại học](capBac) ra sao
+    - cho tui hỏi đào tạo [sau dh](capBac) ra sao
+    - bạn có thể cho tui biết [sau đại học](capBac) đào tạo như thế nào
+    - [sau đại học](capBac) đào tạo ra sao, bạn có thể cho tui biết thông tin không
+    - [sau dh](capBac) hình thức đào tạo như thế nào
+    - [sau dh](capBac)
+    - thông tin [sau dh](capBac)
+    - thông tin đào tạo [sau dh](capBac)
+    - bot ơi, bạn cho mình biết về đào tạo [sau dh](capBac) được không
+    - bot ơi, bạn cho mình biết về đào tạo [sau đại học](capBac) được không
 - intent: hoi_CoCauToChuc
   examples: |
     - cơ cấu tổ chức khoa CNTT
     - ok, vậy giờ tôi muốn biết ai là trưởng khoa cntt thì sao?
     - cơ cấu tổ chức khoa
     - cơ cấu của khoa
+    - cơ cấu tổ chức
+    - bot ơi, cho mình biết thông tin cơ cấu tổ chức của khoa
+    - bot ơi, cho mình biết thông tin cơ cấu tổ chức
     - hãy cho tôi xem cơ cấu tổ chức của khoa
     - hiện tại ai là trường khoa, ai là phó trưởng khoa vậy
     - cơ cấu tổ chức
@@ -650,8 +663,6 @@ nlu:
     - không biết khoa cntt tổ chức như thế nào
     - giảng viên nào nằm trong ban chủ nhiêm
     - ban chủ nhiệm
-    - trưởng khoa
-    - ai là trưởng khoa
     - trưởng khoa cnnt
     - giảng viên nào là trưởng khoa
     - phó trưởng khoa
@@ -666,6 +677,15 @@ nlu:
     - giờ cho tôi thông tin về cơ cấu tổ chức của khoa được không?
 - intent: hoi_doanThanhNien
   examples: |
+    - làm sao để biết thông tin đoàn thanh niên
+    - thông tin về đoàn thanh niên
+    - đoàn thanh niên
+    - đoàn tn
+    - quy trình hoạt động đoàn
+    - hoạt động đoàn
+    - bạn cho mình thông tin đoàn thanh niên khoa cntt
+    - đoàn tn trường dh cn tp hcm
+    - đoàn thanh niên trường đại học công nghiệp
     - quá trình hoạt động của đoàn thanh niên
     - đoàn thanh niên của khoa
     - hoạt động của đoàn thanh niên
@@ -674,6 +694,15 @@ nlu:
     - thông tin đoàn
     - bạn cho mình biết thông tin đoàn thanh niên
     - bot cho mình hỏi thông tin chi tiết về đoàn ở trường mình
+    - bot cho mình thêm thông tin về đoàn thanh niên trường đi
+    - bot cho tôi hỏi thông tin đoàn thanh niên trường đại học công nghiệp
+    - bạn trả lời mình về đoàn thanh niên trường dh cn
+    - thông tin đoàn tn trường cn thế nào
+    - bạn cho mình hỏi các thông tin về đoàn thanh niên
+    - các thông tin bạn có thể trả lời mình về đoàn thanh niên khoa được không
+    - mình muốn biết thông tin về đoàn thanh niên khoa
+    - mình mong muốn biết thêm về thông tin đoàn thanh niên khoa cntt
+    - đoàn thanh niên liên hệ thế nào
 - intent: hoi_tinTucSuKien
   examples: |
     - khoa có sự kiện nào không?
@@ -687,3 +716,13 @@ nlu:
     - tôi muốn xem tin tức mới nhất của khoa công nghệ thông tin
     - bạn có thể nói cho tôi biết sự kiện trung thu sẽ diễn ra vào lúc nòa không?
     - làm ơn cho tôi biết hội thao của khoa sẽ tổ chức như thế nào
+    - có sự kiện nào mới tổ chức ko
+    - bạn cho mình hỏi các sự kiện khoa
+    - tin tức sự kiện
+    - các sự kiện mới của khoa
+    - có thông báo về sự kiện nào không
+    - bot ơi, mình muốn biết thông tin về sự kiện khoa tổ chức
+    - các sự kiện khoa tổ chức mà tôi có thể tham gia
+    - làm sao để có thông tin về các sự kiện
+    - cho tôi thông tin về sự kiện của khoa công nghệ thông tin trường đại học công nghiệp thành phố hồ chí mình
+    
