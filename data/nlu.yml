@@ -4,6 +4,13 @@ nlu:
 # Bộ câu hỏi cơ bản
 - intent: chaoHoi
   examples: |
+    - chào buổi sáng
+    - buổi sáng tốt lành
+    - chào buổi tối
+    - chào buổi chiều
+    - này
+    - hai
+    - hi
     - hey
     - hello
     - chào
@@ -13,6 +20,7 @@ nlu:
     - hi there
     - xin chao
     - xin chào bạn
+    - chào bot
 - intent: tamBiet
   examples: |
     - bye
@@ -21,8 +29,26 @@ nlu:
     - have a nice day
     - tạm biệt
     - nói chuyện sau
+    - lúc khác gặp lại
+    - gặp lại sau
+- intent: deny
+  examples: |
+    - hong
+    - không á
+    - không nhé
+    - không bao giờ
+    - tôi không nghĩ vậy
+    - đừng như vậy chứ
+    - không đời nào
+    - hoàn toàn không
 - intent: khen
   examples: |
+    - tuyệt vời
+    - rất tốt
+    - tuyệt
+    - đáng kinh ngạc
+    - hoàn hảo
+    - tôi cảm thấy rất tuyệt
     - wow
     - you are good
     - thanks for help
@@ -32,9 +58,25 @@ nlu:
     - cảm ơn rất nhiều
     - em cảm ơn ạ
     - cảm ơn ạ
+    - cảm ơn bạn
+    - cảm ơn sự hỗ trợ từ bạn
+    - sự hỗ trợ của bạn rất hữu ích
+    - các thông tin bạn cung cấp cho tôi rất tốt
+    - thật sự những thông tin mà bạn cung cấp cho tôi giúp ích rất nhiều cho tôi
 - intent: cheBai
   examples: |
+    - ko tốt chút nào
     - bạn tệ quá
+    - buồn ghê
+    - quá buồn
+    - quá chán
+    - tệ
+    - rất tệ
+    - tồi tệ
+    - kinh khủng
+    - không ổn lắm
+    - cực kỳ chán
+    - cực kỳ buồn chán
     - tệ quá
     - ngu ngốc
     - không hữu ích
@@ -49,6 +91,7 @@ nlu:
     - giúp tôi?
     - giúp tý?
     - giúp
+    - hỗ trợ
     - tư vấn
     - tư vấn cho tôi?
 - intent: hoi_chucNang
@@ -77,7 +120,7 @@ nlu:
     - AI
 - intent: dongY
   examples: |
-    - có 
+    - có
     - tôi muốn hỏi tiếp
     - vâng tôi muốn bạn tư vấn thêm
     - vâng
@@ -367,14 +410,38 @@ nlu:
   examples: |
     - khoa có thông tin tuyển dụng nào không?
     - khoa có hỗ trợ sinh viên về thực tập không?
+    - khoa có giới thiệu chỗ thực tập cho sinh viên không?
+    - khoa có giới thiệu việc làm cho sinh viên không?
+    - học ngành khdl ra đi làm những gì
+    - học ngành cntt ra đi làm những gì
+    - khoa có tạo điều kiện cho sinh viên tìm chỗ thực tập không?
+    - muốn đi thực tập thì cần những điều kiện gì?
+    - khoa có hỗ trợ việc làm cho sinh viên không?
+    - những cơ hội để có thể đi làm
+    - học ngành htmt ra đi làm những gì
+    - học ngành CNTT ra đi làm những gì
+    - khi thực tập xong cần làm những gì
+    - đã thực tập nhưng chưa nộp báo cáo thì phải làm sao
+    - nếu đi thực tập trễ chưa có dấu mộc báo cáo thì xin gia hạn ở đâu
+    - hạn nộp báo cáo thực tập
+    - hoàn thành thực tập cần những gì
+    - những yếu tố cơ bản để được đi thực tập
+    - học ngành khmt ra đi làm những gì
+    - học ngành KHMT ra đi làm những gì
 - intent: hoi_thongTinTuyenSinh
   examples: |
-    - hiên khoa có tuyển sinh sau đại học không?
+    - hiện khoa có tuyển sinh sau đại học không?
+    - thông báo tuyển sinh
+    - bot cho mình biết thông tin tuyển sinh
+    - chi tiết thông tin tuyển sinh
+    - chi tiết tuyển sinh
     - thông báo tuyển sinh của khoa
     - tuyển sinh
     - tôi muốn xem thông tin tuyển sinh của khoa?
 - intent: hoi_dangKyDoAn 
   examples: |
+    - muốn đăng ký đồ án
+    - muốn đăng ký khóa luận tốt nghiệp
     - tôi muốn đăng ký đồ án
     - đăng ký đồ án
     - đăng ký khóa luận
@@ -384,6 +451,7 @@ nlu:
 # Bộ câu hỏi về đào tạo Cao Đẳng và đào tạo sau ĐH
 - intent: hoi_daoTaoCaoDang 
   examples: |
+    - đào tạo [cao đẳng](capBac)
     - khoa mình có đào tạo hệ [cao đẳng](capBac) không?
     - tôi muốn đăng ký hệ [cao đẳng](capBac)
     - giới thiệu về hệ [cao đẳng](capBac)
@@ -392,6 +460,11 @@ nlu:
     - mức học phí của hệ [cao đẳng](capBac)
 - intent: hoi_DaoTaoSauDH
   examples: |
+    - đào tạo [sau đại học](capBac) như thế nào
+    - bạn cho mình thông tin về đào tạo [sau đại học](capBac)
+    - [sau đại học](capBac) đào tạo ra sao
+    - thật không biết bot có thể cung cấp thông tin về hoạt động đào tạo [sau đại học](capBac) được không
+    - chương trình đào tạo [sau đại học](capBac) có những nội dung gì
     - Đào tạo [sau đại học](capBac)
     - cho tôi thông tin về [sau đại học](capBac)
     - thông tin về đào tạo [sau đại học](capBac)
@@ -402,6 +475,8 @@ nlu:
 - intent: hoi_CoCauToChuc
   examples: |
     - cơ cấu tổ chức khoa CNTT
+    - bạn có thể thông tin mình về cơ cấu tổ chức khoa được không
+    - bot, cho mình thông tin về cơ cấu tổ chức khoa cntt
     - cơ cấu tổ chức khoa
     - cơ cấu của khoa
     - cơ cấu tổ chức
@@ -423,12 +498,21 @@ nlu:
     - giáo vụ
 - intent: hoi_doanThanhNien  
   examples: |
+    - đoàn thanh niên
     - quá trình hoạt động của đoàn thanh niên
     - đoàn thanh niên của khoa
     - hoạt động của đoàn thanh niên
     - chi tiết về đoàn thanh niên
+    - thông tin đoàn thanh niên
+    - thông tin đoàn
+    - bạn cho mình biết thông tin đoàn thanh niên
+    - bot cho mình hỏi thông tin chi tiết về đoàn ở trường mình
 - intent: hoi_tinTucSuKien
   examples: |
     - khoa có sự kiện nào không?
     - một số tin tức mới của khoa
-  
+    - có sự kiện nào được tổ chức ở khoa không
+    - sự kiện
+    - sự kiện khoa
+    - bot cho mình biết các sự kiện khoa tổ chức
+    - bạn cho mình biết có sự kiện nào mới không
