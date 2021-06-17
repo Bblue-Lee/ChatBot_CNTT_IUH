@@ -8,6 +8,7 @@ nlu:
     - chào buổi chiều
     - này
     - hai
+    - chào máy
     - hi
     - hey
     - hello
@@ -90,6 +91,7 @@ nlu:
 - intent: hoi_chucNang
   examples: |
     - bạn có thể làm gì
+    - ban co the lam gi
     - bạn có thể làm gì nào
     - có thể làm gì
     - bạn có thể làm gì cho tôi
@@ -122,12 +124,18 @@ nlu:
     - bạn là ai
     - bản thân bạn
     - AI
+    - bot
     - tôi đang trò chuyện với AI à?
     - không biết tôi đang trò chuyện với ai đây?
-    - bạ có phả là robot không?
+    - bạn có phả là robot không?
 - intent: dongY
   examples: |
     - có
+    - ok
+    - đồng ý
+    - tất nhiên rồi
+    - tất nhiên
+    - có thể
     - tôi muốn hỏi tiếp
     - vâng tôi muốn bạn tư vấn thêm
     - vâng
@@ -145,6 +153,8 @@ nlu:
     - bạn có thể giới thiệu về khoa
     - bạn hãy nêu những thông tin cơ bản về khoa
     - thông tin về khoa
+    - khoa
+    - bạn cho mình biết các thông tin về khoa cntt trường đại học công nghiệp được không
     - bạn có thể cho tôi biết được thông tin về khoa hay không?
     - không biết khoa mình hình thành từ năm nào?
     - bạn cho tôi biết khoa cntt của trường hình thành từ năm bao nhiêu không?
@@ -162,11 +172,16 @@ nlu:
     - bây giờ cho tôi biết phương châm của khoa cntt là gì?
     - khoa cnntt hình thành từ khi nào và phương châm của khoa là gì?
     - admin cho tôi biết là thời gian hình thành khoa công nghệ thông tin
+    - hãy cho tôi biết các thông tin về khoa công nghệ thông tin trường công nghiệp
+    - cho tui biết thông tin khoa trường đại học công nghiệp
 - intent: hoi_thongTinKhoaChung_tamNhin
   examples: |
     - bạn hãy nêu cho tôi tầm nhìn của khoa trong những năm tới
     - cho tôi biết tầm nhìn của khoa
     - tầm nhìn của khoa
+    - thông tin chung về tầm nhìn của khoa công nghệ thông tin như thế nào
+    - bạn cho mình thông tin tầm nhìn khoa cntt được không
+    - tầm nhìn khoa cntt trường dh cn như thế nào
     - tầm nhìn
     - không biết khoa cntt có tầm nhìn như thế nào đối với quá trình hội nhập quốc tế hiện nay
     - bạn có thể cho biết tôi biết tầm nhìn của khoa như thế nào đối với hoàn cảnh hiện tại
@@ -179,8 +194,11 @@ nlu:
     - hãy nêu sứ mệnh của khoa công nghệ thông tin
     - bạn có thể nêu lên sứ mệnh của khoa
     - sứ mệnh của khoa
+    - thông tin chung khoa, sứ mệnh
     - sứ mệnh
-    - sứ mênh của khoa
+    - sứ mênh của khoa cntt
+    - thông tin khoa sứ mệnh
+    - hi, bạn cho mình biết sứ mệnh khoa cntt được không
     - khoa có sứ mệnh như thế nào đối với quá trình đào tạo thế hệ trẻ
     - tôi muốn biết sứ mệnh của khoa như thế nào
     - bây giờ bạn có thể nêu lên sứ mệnh cảu khoa trong việc đào tạo nguồn nhân lực cho xã hội
@@ -188,7 +206,10 @@ nlu:
 - intent: hoi_thongTinKhoaChung_chucNangNhiemVu
   examples: |
     - chức năng của khoa
+    - chức năng nhiệm vụ khoa cntt
+    - chức năng nhiệm vụ khoa như thế nào
     - nhiệm vụ của khoa
+    - bạn cho mình biết chức năng nhiệm vụ khoa
     - bạn cho tôi biết chức năng và nhiệm vụ của khoa
     - hãy nêu chức năng và nhiệm vụ của khoa
     - tôi muốn biết chức năng của khoa
@@ -198,12 +219,33 @@ nlu:
     - bây giờ tôi muốn biết
 - intent: hoi_thongTinKhoaChung_doiNgu
   examples: |
+    - đội ngũ giảng viên
+    - giảng viên
+    - thông tin giảng viên
+    - cho tui biết thông tin giảng viên khoa cntt
+    - bạn cho mình biết thông tin về giảng viên của trường đại học công nghiệp tp hồ chí minh
+    - bạn cho tôi biết về giảng viên trường cn tp hcm
+    - bot cho mình biết đội ngũ giảng viên
+    - đội ngũ giảng viên khoa cntt thế nào
+    - bạn biết đội ngũ giảng viên ra sao
+    - thông tin đội ngũ giảng viên
     - hiện nay khoa có bao nhiêu giảng viên
     - khoa có bao nhieu tiến sĩ, thạc sĩ, giáo sư
     - cho tôi biết đội ngũ giảng viên của khoa
 - intent: hoi_thongTinKhoaChung_daoTao
   examples: |
     - đào tạo của khoa hiện nay như thế nào
+    - đào tạo
+    - thông tin đào tạo
+    - đào tạo khoa cntt
+    - bạn cho mình biết các thông tin về đào tạo
+    - thông tin chung, đào tạo
+    - hello, bot cho tui biết chương trình đào tạo của khoa
+    - hello, bot cho tui biết quy trình đào tạo của khoa
+    - hello, bot cho tui biết tiến trình đào tạo của khoa
+    - hi, bot cho tui biết chương trình đào tạo của khoa
+    - ok, bot cho tui biết quy trình đào tạo của khoa
+    - well, bot cho tui biết tiến trình đào tạo của khoa
     - cho tôi biết về đào tạo của khoa
     - bạn hãy cho tôi biết thông tin về đào tạo của khoa như thế nào
     - tôi muốn biết thêm thông tin về đào tạo của khoa
@@ -211,6 +253,11 @@ nlu:
 - intent: hoi_thongTinKhoaChung_dinhHuongPhatTrien
   examples: |
     - định hướng phát triển của khoa
+    - định hướng phát triển
+    - thông tin định hướng phát triển
+    - thông tin định hướng
+    - định hướng
+    - thông tin định hướng thế nào
     - khoa có dịnh hướng phát triển như thế nào trong tương lai
 - intent: hoi_thongTinKhoaChung_lienHe
   examples: |
@@ -219,10 +266,19 @@ nlu:
     - mình có gặp một số vấn đề, không biết mình có thể liên hệ với khoa như thể nào?
     - bây giờ làm sao để liên hệ với khoa cntt
     - liên hệ khoa công nghệ thông tin
-    - 
+    - thông tin liên hệ
+    - liên hệ khoa
+    - liên hệ
 - intent: hoi_thongTinKhoaChung_truongKhoa
   examples: |
     - hiện tại ai là trưởng khoa
+    - trưởng khoa
+    - thông tin trưởng khoa
+    - thông tin chung trưởng khoa
+    - trưởng khoa khoa cntt
+    - trưởng khoa khoa cntt trường đại học cn
+    - trưởng khoa khoa cntt trường đại học công nghiệp
+    - trưởng khoa khoa cntt trường đại học cn thành phố hồ chí minh
     - trưởng khoa qua các thời kỳ
     - bạn có thể cho tôi biết các trưởng khoa không?
     - bây giờ tôi muốn xem các vị trưởng khoa trong các giai đoạn hình thành khoa?
@@ -237,6 +293,9 @@ nlu:
 - intent: hoi_DoiNguGV_KTPM
   examples: |
     - Đội ngũ giảng viên của ngành [kỹ thuật phần mềm](boMon)
+    - giảng viên ngành [kỹ thuật phần mềm](boMon)
+    - ok, cho tui biết thông tin giảng viên [kỹ thuật phần mềm](boMon)
+    - ok, cho tui biết thông tin giảng viên [ktpm](boMon)
     - Giảng viên [kỹ thuật phần mềm](boMon)
     - cho tôi biết đội ngũ giảng viên của ngành [KTPM](boMon)
     - giảng viên bộ môn [KTPM](boMon)
@@ -250,6 +309,9 @@ nlu:
 - intent: hoi_DoiNguGV_KHMT
   examples: |
     - Đội ngũ giảng viên của ngành [khoa học máy tính](boMon)
+    - giảng viên [khoa học máy tính](boMon)
+    - bạn cho tôi biết thông tin giảng viên ngành [khoa học máy tính](boMon)
+    - bạn cho tôi biết thông tin giảng viên ngành [khmt](boMon)
     - Giảng viên [khoa hoch máy tính](boMon)
     - cho tôi biết đội ngũ giảng viên của ngành [KHMT](boMon)
     - giảng viên bộ môn [khoa học máy tính](boMon)
@@ -515,7 +577,7 @@ nlu:
     - học ngành KHMT ra đi làm những gì 
 - intent: hoi_thongTinTuyenSinh
   examples: |
-    - hiên khoa có tuyển sinh sau đại học không?
+    - hiện khoa có tuyển sinh sau đại học không?
     - thông báo tuyển sinh của khoa
     - tuyển sinh
     - tôi muốn xem thông tin tuyển sinh của khoa?
@@ -544,8 +606,10 @@ nlu:
     - thông tin tuyển sinh cao đẳng
 - intent: hoi_dangKyDoAn
   examples: |
+    - toi muon dang ky dn
     - tôi muốn đăng ký đồ án
     - đăng ký đồ án
+    - dang ky do an
     - đăng ký khóa luận
     - đồ án tốt nghiệp
     - làm sao để đăng ký đồ án
@@ -606,6 +670,10 @@ nlu:
     - đoàn thanh niên của khoa
     - hoạt động của đoàn thanh niên
     - chi tiết về đoàn thanh niên
+    - thông tin đoàn thanh niên
+    - thông tin đoàn
+    - bạn cho mình biết thông tin đoàn thanh niên
+    - bot cho mình hỏi thông tin chi tiết về đoàn ở trường mình
 - intent: hoi_tinTucSuKien
   examples: |
     - khoa có sự kiện nào không?
