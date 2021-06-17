@@ -1,15 +1,8 @@
 ## ChatBot_CNTT_IUH
-*in nghiêng*
-**bôi đậm**
-***nghiêng+đâm***
-`code`
-[tittle](link)
-* item1
-* item2
-### ***Tổng quan**
-*Với mong muốn xây dựng và ứng dụng Chatbot cho Khoa Công nghệ thông tin trong thời gian sắp tới, chúng tôi quyết định nghiên cứu đề tài: “Xây dựng Chatbot cho Khoa Công nghệ thông tin trường Đại học Công nghiệp Thành phố Hồ Chí Minh”.
-### ***Các công cụ cần thiết cho project***
-####Project của chúng tôi sử dụng 1 số công cụ cần thiết sau, bạn cần đảm bảo là đã cài đặt các công cụ cần thiết để tiếp tục:
+
+### **Tổng quan**
+*Với mong muốn xây dựng và ứng dụng Chatbot cho Khoa Công nghệ thông tin trong thời gian sắp tới, chúng tôi quyết định nghiên cứu đề tài: “Xây dựng Chatbot cho Khoa Công nghệ thông tin trường Đại học Công nghiệp Thành phố Hồ Chí Minh”.# ***Các công cụ cần thiết cho project***
+Project của chúng tôi sử dụng 1 số công cụ cần thiết sau, bạn cần đảm bảo là đã cài đặt các công cụ cần thiết để tiếp tục:
 * Python
 * Rasa
 * TensorFlow
