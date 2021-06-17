@@ -5,23 +5,13 @@ rules:
   steps:
   - intent: chaoHoi
   - action: utter_chaoHoi
-- rule: show gv ktpm
+- rule: tạm biệt
   steps:
-  - intent: hoi_DoiNguGV_KTPM
-  - action: action_hoi_DoiNguGV_KTPM
-- rule: only show gv_khmt when action ask gv_khmt
+  - intent: tamBiet
+  - action: utter_tamBiet
+- rule: tiếp tục hay không
   steps:
-  - intent: hoi_DoiNguGV_KHMT
-  - action: action_hoi_DoiNguGV_KHMT
-- rule: only show gv_KHDL
-  steps:
-  - intent: hoi_DoiNguGV_KHDL
-  - action: action_hoi_DoiNguGV_KHDL
-- rule: only show gv_CNTT
-  steps:
-  - intent: hoi_DoiNguGV_CNTT
-  - action: action_hoi_DoiNguGV_CNTT
-- rule: only show gv_httt
-  steps:
-  - intent: hoi_DoiNguGV_HTMT
-  - action: action_hoi_DoiNguGV_HTMT
+  - intent: dongY
+  - action: utter_Ask_giupDO
+  
+
