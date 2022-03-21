@@ -30,6 +30,16 @@ nlu:
     - nói chuyện sau
     - lúc khác gặp lại
     - gặp lại sau
+- intent: deny
+  examples: |
+    - hong
+    - không á
+    - không nhé
+    - không bao giờ
+    - tôi không nghĩ vậy
+    - đừng như vậy chứ
+    - không đời nào
+    - hoàn toàn không
     - ok tạm biệt
 - intent: khen
   examples: |
@@ -574,6 +584,21 @@ nlu:
     - hoàn thành thực tập cần những gì
     - những yếu tố cơ bản để được đi thực tập
     - học ngành khmt ra đi làm những gì
+    - học ngành KHMT ra đi làm những gì
+- intent: hoi_thongTinTuyenSinh
+  examples: |
+    - hiện khoa có tuyển sinh sau đại học không?
+    - thông báo tuyển sinh
+    - bot cho mình biết thông tin tuyển sinh
+    - chi tiết thông tin tuyển sinh
+    - chi tiết tuyển sinh
+    - thông báo tuyển sinh của khoa
+    - tuyển sinh
+    - tôi muốn xem thông tin tuyển sinh của khoa?
+- intent: hoi_dangKyDoAn 
+  examples: |
+    - muốn đăng ký đồ án
+    - muốn đăng ký khóa luận tốt nghiệp
     - học ngành KHMT ra đi làm những gì 
 - intent: hoi_thongTinTuyenSinh
   examples: |
@@ -621,6 +646,7 @@ nlu:
     - thời gian đăng ký đồ án như thế nào vậy, không biết bây giờ đăng ký còn kịp không?
 - intent: hoi_daoTaoCaoDang
   examples: |
+    - đào tạo [cao đẳng](capBac)
     - khoa mình có đào tạo hệ [cao đẳng](capBac) không?
     - tôi muốn đăng ký hệ [cao đẳng](capBac)
     - giới thiệu về hệ [cao đẳng](capBac)
@@ -631,6 +657,11 @@ nlu:
     - bạn có thể giới thiệu về hệ cao đẳng của khoa được không
 - intent: hoi_DaoTaoSauDH
   examples: |
+    - đào tạo [sau đại học](capBac) như thế nào
+    - bạn cho mình thông tin về đào tạo [sau đại học](capBac)
+    - [sau đại học](capBac) đào tạo ra sao
+    - thật không biết bot có thể cung cấp thông tin về hoạt động đào tạo [sau đại học](capBac) được không
+    - chương trình đào tạo [sau đại học](capBac) có những nội dung gì
     - Đào tạo [sau đại học](capBac)
     - cho tôi thông tin về [sau đại học](capBac)
     - thông tin về đào tạo [sau đại học](capBac)
@@ -650,6 +681,8 @@ nlu:
 - intent: hoi_CoCauToChuc
   examples: |
     - cơ cấu tổ chức khoa CNTT
+    - bạn có thể thông tin mình về cơ cấu tổ chức khoa được không
+    - bot, cho mình thông tin về cơ cấu tổ chức khoa cntt
     - ok, vậy giờ tôi muốn biết ai là trưởng khoa cntt thì sao?
     - cơ cấu tổ chức khoa
     - cơ cấu của khoa
@@ -677,6 +710,7 @@ nlu:
     - giờ cho tôi thông tin về cơ cấu tổ chức của khoa được không?
 - intent: hoi_doanThanhNien
   examples: |
+    - đoàn thanh niên
     - làm sao để biết thông tin đoàn thanh niên
     - thông tin về đoàn thanh niên
     - đoàn thanh niên
@@ -707,6 +741,11 @@ nlu:
   examples: |
     - khoa có sự kiện nào không?
     - một số tin tức mới của khoa
+    - có sự kiện nào được tổ chức ở khoa không
+    - sự kiện
+    - sự kiện khoa
+    - bot cho mình biết các sự kiện khoa tổ chức
+    - bạn cho mình biết có sự kiện nào mới không
     - trong khoa hiện tại có sự kiện nào không?
     - trong thời gian tới khoa có tổ chức sự kiện nào không?
     - sự kiện nổi bật của khoa trong năm vừa qua?
@@ -715,6 +754,7 @@ nlu:
     - tin tức mới nhất của khoa
     - tôi muốn xem tin tức mới nhất của khoa công nghệ thông tin
     - bạn có thể nói cho tôi biết sự kiện trung thu sẽ diễn ra vào lúc nòa không?
+    - làm ơn cho tôi biết hội thao của khoa sẽ tổ chức như thế nào
     - làm ơn cho tôi biết hội thao của khoa sẽ tổ chức như thế nào
     - có sự kiện nào mới tổ chức ko
     - bạn cho mình hỏi các sự kiện khoa
@@ -725,4 +765,3 @@ nlu:
     - các sự kiện khoa tổ chức mà tôi có thể tham gia
     - làm sao để có thông tin về các sự kiện
     - cho tôi thông tin về sự kiện của khoa công nghệ thông tin trường đại học công nghiệp thành phố hồ chí mình
-    
